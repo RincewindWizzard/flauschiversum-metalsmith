@@ -1,0 +1,20 @@
+{
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-less": {
+      "pattern": "static/style/*.less"
+    },
+    "./plugins/rm_less": true,
+    "metalsmith-markdown": {
+      "gfm": true
+    },
+    "./plugins/index_pages": true,
+    "metalsmith-layouts": {
+      "pattern": "**/*.html",
+      "engine": "jade",
+      "directory": "templates",
+      "default": "page.jade"
+    }
+  }
+}

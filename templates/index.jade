@@ -1,0 +1,8 @@
+extends ./layout.jade
+
+block title
+  = title
+
+block body
+  each post in posts
+    = post.title

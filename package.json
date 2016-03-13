@@ -1,0 +1,19 @@
+{
+  "name": "metalsmith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "metalsmith"
+  },
+  "author": "RincewindWizzard <github@magierdinge.de> (magierdinge.de)",
+  "license": "ISC",
+  "dependencies": {
+    "metalsmith-debug": "0.0.2",
+    "metalsmith-jade": "^2.0.2",
+    "metalsmith-layouts": "^1.6.4",
+    "metalsmith-less": "^2.0.0",
+    "metalsmith-markdown": "^0.2.1"
+  }
+}
