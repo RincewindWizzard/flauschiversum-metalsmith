@@ -5,9 +5,12 @@ html(lang="de")
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width')
+      link(rel="stylesheet", href="/style/main.css")
       title
         block title
           = locals.name
   body
-    block body
+    block content
       != contents
+
+    script(src='/js/jquery.js')

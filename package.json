@@ -10,10 +10,15 @@
   "author": "RincewindWizzard <github@magierdinge.de> (magierdinge.de)",
   "license": "ISC",
   "dependencies": {
+    "async": "^1.5.2",
+    "gm": "^1.21.1",
     "metalsmith-debug": "0.0.2",
     "metalsmith-jade": "^2.0.2",
     "metalsmith-layouts": "^1.6.4",
     "metalsmith-less": "^2.0.0",
-    "metalsmith-markdown": "^0.2.1"
+    "metalsmith-markdown": "^0.2.1",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.12.0",
+    "slug": "^0.9.1"
   }
 }

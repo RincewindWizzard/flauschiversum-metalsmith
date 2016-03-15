@@ -4,7 +4,7 @@ category: basteln
 author: Ermeline
 date: 2014-10-24 20:15:05
 image: DSCF1828-e1421937578797.jpg
-excerpt: "So eine Firmenfeier mit dem Motto "Maskenball" steht bei einem Freund an und es wird an mich herangetreten: \"Sag mal Ermeline... könntest du vielleicht, ich hab hier noch diese blanko Maske...\""
+excerpt: "So eine Firmenfeier mit dem Motto \"Maskenball\" steht bei einem Freund an und es wird an mich herangetreten: \"Sag mal Ermeline... könntest du vielleicht, ich hab hier noch diese blanko Maske...\""
 ---
 
 So eine Firmenfeier mit dem Motto "Maskenball" steht bei einem Freund an und es wird an mich herangetreten: "Sag mal Ermeline... könntest du vielleicht, ich hab hier noch diese blanko Maske..." "Klar!" sag ich. "Was stellst du dir vor, ich würde das so und so machen, schau mal dieser Stoff und ich hab hier noch Perlen und dies und jenes..." Ermeline wühlt und kramt in ihren Kisten weiter, bis die Materialien zusammengesucht sind und dann wird der Freund nach hause geschickt, damit das Ermelinchen in Ruhe arbeiten kann.

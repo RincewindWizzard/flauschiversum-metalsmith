@@ -1,8 +1,10 @@
 /**
  * Shows a list of latest posts for each category
  */
-var path = require('path')
+var path = require('path'),
+    moment = require('moment')
 
+var posts_per_page = 10
 
 function posts_by_category(files) {
   var categories = { '': [] }
@@ -25,7 +27,8 @@ function posts_by_category(files) {
 
   // sort posts in their categories
   for(var cat in categories) {
-    categories[cat].sort((a,b) => a.date < b.date)
+    categories[cat].sort((a,b) => b.date - a.date)
+
   }
   return categories
 }
@@ -36,13 +39,14 @@ function add_index_pages(files) {
     files[path.join(cat, 'index.html')] = {
       'layout': 'index.jade',
       'category': cat,
-      'posts': categories[cat],
+      'posts': categories[cat].slice(0, posts_per_page),
       'contents': ''
     }
   }
 }
 
-module.exports = function() {
+module.exports = function(options) {
+  posts_per_page = options['posts_per_page']
   return function(files, metalsmith, done) {
     add_index_pages(files)
     done();

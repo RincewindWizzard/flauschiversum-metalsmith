@@ -1,0 +1,14 @@
+#!/bin/sh
+
+while true
+do
+  metalsmith
+  # start webserver
+  cd build
+  kill -9 `cat /tmp/pyhttpd.pid`
+  python3 -m http.server 8080 &
+  echo $! > /tmp/pyhttpd.pid
+  cd ..
+
+  inotifywait -e CLOSE -r src/ templates/ plugins/
+done

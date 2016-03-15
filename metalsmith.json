@@ -2,14 +2,22 @@
   "source": "src",
   "destination": "build",
   "plugins": {
+    "./plugins/static": true,
     "metalsmith-less": {
-      "pattern": "static/style/*.less"
+      "pattern": "style/*.less"
     },
     "./plugins/rm_less": true,
     "metalsmith-markdown": {
       "gfm": true
     },
-    "./plugins/index_pages": true,
+
+    "./plugins/index_pages": {
+      "posts_per_page": 5
+    },
+    "./plugins/permalinks": true,
+    "./plugins/image_thumbs": true,
+
+    "./plugins/filters": true,
     "metalsmith-layouts": {
       "pattern": "**/*.html",
       "engine": "jade",
