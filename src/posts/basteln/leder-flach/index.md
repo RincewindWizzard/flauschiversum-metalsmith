@@ -3,8 +3,6 @@ title: "Leder Flach"
 category: basteln
 author: Ermeline
 date: 2013-07-28 00:54:42
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Wer sich mal an Lederarbeiten, wie Punzieren versuchen will..."
 ---
 

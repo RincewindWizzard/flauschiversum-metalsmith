@@ -10,5 +10,5 @@ do
   echo $! > /tmp/pyhttpd.pid
   cd ..
 
-  inotifywait -e CLOSE -r src/ templates/ plugins/
+  inotifywait -e CLOSE_WRITE -r src/ templates/ plugins/
 done

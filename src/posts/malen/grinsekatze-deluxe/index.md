@@ -3,8 +3,6 @@ title: "Grinsekatze deluxe"
 category: malen
 author: Ermeline
 date: 2015-05-11 15:09:53
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF2812.jpg"
 excerpt: "Es war einmal ein Acrylmal-Wochenende in der schönen Schule..."
 ---
@@ -37,10 +35,8 @@ Auf diesem Bild kann man das Pink auf blauem Untergrund erkennen, es hat eine ge
 Das Gold habe ich mit einer Folie, die ich mit Farbe eingestrichen habe aufgegtragen, dazu wird die bestrichene Folie auf die Leinwand gelegt und nur minimal angedrückt, so entstehen die interessantesten Strukturen.
 
 
-<div class="slideshow_landscape">
 ![DSCF2820](DSCF2820.jpg)
 ![DSCF2821](DSCF2821.jpg)
-</div>
 
 An diesen Stelle habe ich mit der Serviettentechnik gearbeitet, ich habe also auf die noch nicht getrocknete Farbe Serviettenstücke aufgelegt. Damit es sich besser an das Bild schmiegt, habe ich an den Ohren nur die farbintensivste, erste Serviettenschicht genommen, den Rest habe ich bei dem Brustfell verwendet.
 
@@ -50,10 +46,8 @@ An diesen Stelle habe ich mit der Serviettentechnik gearbeitet, ich habe also au
 Auch hier kann man nochmal die Marmoriertechnik sehen, an dieser Stelle habe ich bewusst begonnen die Katze heraus zu arbeiten.
 
 
-<div class="slideshow_landscape">
 ![DSCF2826](DSCF2826.jpg)
 ![DSCF2829](DSCF2829.jpg)
-</div>
 
 Hier habe ich mit den Stoffresten vom Schwanz gearbeitet, ich habe sie mit einer Farbrolle angestrichen und dann das Muster aufs Bild gedruckt, an manchen Stellen habe ich auch den Stoff auf dem Bild selbst abgerollt und so im Negativ die Blumen auf das Bild gebracht. Hier ein Stempel, da ein Stempel...
 

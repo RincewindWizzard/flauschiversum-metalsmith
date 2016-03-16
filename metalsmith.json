@@ -7,6 +7,7 @@
       "pattern": "style/*.less"
     },
     "./plugins/rm_less": true,
+    "./plugins/post_formatter": true,
     "metalsmith-markdown": {
       "gfm": true
     },

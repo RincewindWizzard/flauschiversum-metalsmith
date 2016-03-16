@@ -3,8 +3,6 @@ title: "de Wullstuuv"
 category: filzen
 author: Ermeline
 date: 2013-07-28 00:50:23
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Das ist der Laden für Spinner und Filzer."
 ---
 

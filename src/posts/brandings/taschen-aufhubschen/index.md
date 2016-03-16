@@ -3,8 +3,6 @@ title: "Taschen aufhübschen"
 category: brandings
 author: Ermeline
 date: 2014-01-04 19:39:45
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF0093.JPG"
 excerpt: "Also ich finde Ledertaschen ja toll."
 ---

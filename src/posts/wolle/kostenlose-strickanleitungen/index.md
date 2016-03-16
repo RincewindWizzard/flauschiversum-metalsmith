@@ -3,8 +3,6 @@ title: "kostenlose Strickanleitungen"
 category: wolle
 author: Ermeline
 date: 2014-06-29 15:32:06
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Sooo dann wollen wir doch mal das Wissen um meine Strickanleitungsquellen teilen."
 ---
 

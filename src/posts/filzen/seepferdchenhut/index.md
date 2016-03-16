@@ -3,19 +3,15 @@ title: "Seepferdchenhut"
 category: filzen
 author: Ermeline
 date: 2015-11-15 15:00:00
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "Seepferdchenhut_links.jpg"
 excerpt: "Meer auf dem Kopf haben wünschen sich nicht nur manche Männer..."
 ---
 
-<div class="slideshow_portrait">
 ![links](Seepferdchenhut_links.jpg)
 ![vorne](Seepferdchenhut_vorne.jpg)
 ![rechts](Seepferdchenhut_rechts.jpg)
 ![hinten](Seepferdchenhut_hinten.jpg)
 ![oben](Seepferdchenhut_hintenoben.jpg)
-</div> 
 
 "Meer" auf dem Kopf haben wünschen sich nicht nur manche Männer, auch meine Mutter hatte den Wunsch nach einem alltagstauglichen Hut. "Ist ja bald Weihnachten..." dachte ich mir und so filzte ich ein verfrühtes Weihnachtsgeschenk. 
 

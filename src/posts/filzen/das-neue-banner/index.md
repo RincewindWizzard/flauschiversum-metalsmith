@@ -3,8 +3,6 @@ title: "das neue Banner"
 category: filzen
 author: Ermeline
 date: 2014-08-31 18:45:53
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF1536.jpg"
 excerpt: "Wie eifrige Leser schon mitbekommen haben könnten, widme ich mich in meiner Freizeit dem Hobby LARP (Live Action Role Playing)."
 ---

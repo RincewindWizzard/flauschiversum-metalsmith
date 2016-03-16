@@ -3,19 +3,15 @@ title: "Mein erster Filzhut"
 category: filzen
 author: Ermeline
 date: 2014-01-02 21:47:16
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: DSCF0503-e1423513550725.jpg
 excerpt: "Also ich habe mich vorher noch nie an das Filzen herangetraut, und dann kam es über mich: zu viel freie Zeit und der Wille einen qualitativ hochwertigen Hexenhut zu haben, wie ich ihn mir immer vorgestellt habe... denkste..."
 ---
 
-<div class="slideshow_portrait">
 ![DSCF0503](DSCF0503-e1423513550725.jpg)
 ![DSCF0504](DSCF0504-e1423513561706.jpg)
 ![DSCF0505](DSCF0505-e1423513572622.jpg)
 ![DSCF0506](DSCF0506-e1423513581270.jpg)
 ![DSCF0507](DSCF0507-e1423513592532.jpg)
-</div>
 
 Also ich habe mich vorher noch nie an das Filzen herangetraut, und dann kam es über mich: zu viel freie Zeit und der Wille einen qualitativ hochwertigen Hexenhut zu haben, wie ich ihn mir immer vorgestellt habe.
 Da ich über Umwege zum LARPen gekommen bin wusste ich, sollte der Hut was werden, was ich für einen Charakter erschaffen wollte - eine junge, leicht wollhysterische, verschrobene Hexe. 

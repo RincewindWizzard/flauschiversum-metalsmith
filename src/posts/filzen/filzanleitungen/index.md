@@ -3,8 +3,6 @@ title: "Filzanleitungen"
 category: filzen
 author: Ermeline
 date: 2014-07-28 20:40:10
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Neben den Anleitungen, die du bei mir findest, gibt es auch noch viele..."
 ---
 

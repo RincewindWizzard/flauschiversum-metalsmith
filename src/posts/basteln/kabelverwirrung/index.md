@@ -3,8 +3,6 @@ title: "Kabelverwirrung"
 category: basteln
 author: Ermeline
 date: 2014-04-28 21:54:55
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF2329.jpg"
 excerpt: "Also wer kennt das nicht: einem ist langweilig und zufällig liegen ein paar alte Kabel herum..."
 ---

@@ -3,8 +3,6 @@ title: "Muttis Tasche"
 category: brandings
 author: Ermeline
 date: 2016-01-24 18:25:10
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF3721.JPG"
 excerpt: "Neulich auf dem Flohmarkt..."
 ---
@@ -17,11 +15,9 @@ Diese habe ich auf die Tasche übertragen und mit dem Brenner im Leder verewigt.
 
 ![Tasche ganz](DSCF3721.JPG)
 
-<div class="slideshow_landscape">
 ![Tasche Detail 1](DSCF3724.JPG)
 ![Tasche Detail 2](DSCF3723.JPG)
 ![Tasche Detail 3](DSCF3722.JPG)
-</div>
 
 
 

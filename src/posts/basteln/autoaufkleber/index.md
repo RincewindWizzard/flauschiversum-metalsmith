@@ -3,8 +3,6 @@ title: "Autoaufkleber"
 category: basteln
 author: Ermeline
 date: 2014-05-22 15:05:28
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF0641.JPG"
 excerpt: "Jaaaa, also... ich hab ein klein wenig gebastelt."
 ---

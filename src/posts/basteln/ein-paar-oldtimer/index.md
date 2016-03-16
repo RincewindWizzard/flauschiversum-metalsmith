@@ -3,8 +3,6 @@ title: "Ein paar Oldtimer"
 category: basteln
 author: Ermeline
 date: 2016-01-03 21:16:47
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "100_0371.JPG"
 excerpt: "Starten wir das Jahr 2016 mal mit ein paar Oldies aus meiner Foto-Fundgrube."
 ---
@@ -15,18 +13,14 @@ Hier sind ein paar selbstgemalte und abgemalte Bilder, die noch nicht im Flausch
 
 
 ## Bilder
-<div class="slideshow_landscape">
 ![Gwendoline](die Ärzte Gwendoline.jpg)
 ![Rose](2.jpg)
 ![beißende Paprika](beißende paprika.jpg)
 ![zeichnende Hand](PA130001.JPG)
-</div>
 
-<div class="slideshow_portrait">
 ![Katzenfrau](100_0371.JPG)
 ![Hasen Moorhuhn](DSC00097.jpg)
 ![Löwe](P3180015.JPG)
-</div>
 
 
 Diese Fotos sind was für die Leute, die meinen Kleiderschrank schon in real gesehen haben, viele Menschen haben sich in ihm mit Edding verewigt und einiges zeugt aus meiner Zeit nach meinem Schulabschluss. Ich zeige das Innenleben mal nicht, da sind auch ein paar Peinlichkeiten drin...
@@ -41,7 +35,6 @@ Hier sind einige Strickwaren, die ich irgendwann mal gemacht habe. Das blaue Tuc
 
 
 ## Gestrickt
-<div class="slideshow_landscape">
 ![MP3-Player](IMG_3744.JPG)
 ![MP3-Player](IMG_3745.JPG)
 ![Handschuh](IMG_4252.JPG)
@@ -57,7 +50,6 @@ Hier sind einige Strickwaren, die ich irgendwann mal gemacht habe. Das blaue Tuc
 ![Buch4](IMG_4264.JPG)
 ![Bcuh5](IMG_4266.JPG)
 ![Buch6](IMG_4267.JPG)
-</div>
 
 
 Zum Schluss noch das Fundstück des Kleiderschranks. Meine aus Krawatten zusammengenähte Weste, der Verschluss ist eine alte Seidenfliege.

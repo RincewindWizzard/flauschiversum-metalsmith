@@ -3,8 +3,6 @@ title: "Filz-Stifte statt Filzstifte"
 category: filzen
 author: Ermeline
 date: 2014-07-23 18:45:51
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF1405.jpg"
 excerpt: "Diese Stifte gehen ganz schnell und man kann ganz toll seine Reste verwerten..."
 ---

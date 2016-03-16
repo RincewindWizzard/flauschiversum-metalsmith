@@ -3,8 +3,6 @@ title: "Warum liegt denn hier Kürbis...?"
 category: basteln
 author: Ermeline
 date: 2014-10-25 18:21:13
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "Werkzeug.jpg"
 excerpt: "Bald ist Halloween und wann wenn nicht jetzt, ist es an der Zeit ein Tutorial zum Kürbisschnitzen zu machen?"
 ---
@@ -24,11 +22,9 @@ Unser Kürbis soll ein kleines freches Grinsen mit einem Zyklopenauge bekommen. 
 Mit einer Nadel o.Ä. kann man sich anritzen, wo die wichtigsten Teile des Gesichtes liegen sollen, das hilft einem bei den ersten Schnitten mit dem Messer. Beginnt nun mit den Details, erstmal schnitzt ihr im Groben zum Beispiel die Zähne und das Auge, sucht erstmal die Formen eures Gesichtes.
 
 
-<div class="slideshow_landscape">
 ![Schnitzen1](Schnitzen1.jpg)
 ![Schnitzen2](Schnitzen2.jpeg)
 ![Feintuning](Feintuning.jpeg)
-</div>
 
 Wenn ihr die Formen gefunden habt, geht es an das Ausdefinieren. Die Zähne müssen runder und die Mundwinkel tiefer, das Auge muss noch sein Lid bekommen und etwas tiefer liegen, auch die Falten um die Mundwinkel verdienen nun eure Aufmerksamkeit, wenn euch die Formen und Falten gefallen, geht es nun an das Finishing.  
 
@@ -39,11 +35,9 @@ Wenn ihr die Formen gefunden habt, geht es an das Ausdefinieren. Die Zähne müs
 Tusche her und Pinsel schwingen. Achtet beim Bemalen darauf, dass eure Tusche nicht zu wässrig ist und macht dunkel, was im Schatten liegt und setzt Akzente erst zum Schluss, so wie hier das Blut auf den Zähnen oder die Adern im Auge. Um dem Kürbis ein wenig Haltbarkeit zu geben (mit intakter Schale halten Kürbisse sich über Monate...) haben wir mit Klarlack eine unsichtbare Schutzschicht nach dem Trocknen der Tusche aufgetragen.
 
 
-<div class="slideshow_landscape">
 ![links](links.jpg)
 ![vorne](vorne.jpg)
 ![rechts](rechts.jpg)
 ![oben](oben.jpg)
-</div>
 
 Nach insgesamt 4 Stunden Arbeit und dem Verzehr eines halben Schokokuchens, sind wir mit dem Ergebnis sehr zufrieden. Jetzt braucht unser Zyklopschen noch einen Namen, hat jemand vielleicht eine tolle Idee? (Vorschläge dürfen gerne als Kommi gepostet werden!)

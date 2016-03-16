@@ -14,9 +14,10 @@ module.exports = function() {
   return function(files, metalsmith, done) {
 
     var mv = {}
+    // Post content
     for (var file in files) {
       if(file.match(/^posts\/.*index.html$/)) {
-        var post = files[file]
+        var post = files[file]       
         var dst = moment(post.date).format('YYYY/MM/') + slugify(post.title)
         post.url = '/' + dst + '/'
         if(post.image) post.image = path.join(post.url, '300x', post.image)
@@ -24,6 +25,7 @@ module.exports = function() {
       }
     }
 
+    // Post images
     for (var file in files) {
       if(file.match(/^posts\//)) {
         files[file].src_filename = file

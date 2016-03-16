@@ -3,8 +3,6 @@ title: "Das Buch Angela"
 category: basteln
 author: Lucy
 date: 2014-06-12 16:05:04
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF0890.jpg"
 excerpt: "Wenn ich gerade mal nicht handarbeite, dann betätige ich mich als Schriftstellerin."
 ---

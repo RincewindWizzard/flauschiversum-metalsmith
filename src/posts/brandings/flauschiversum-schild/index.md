@@ -3,8 +3,6 @@ title: "Flauschiversum Schild"
 category: brandings
 author: Ermeline
 date: 2016-01-17 13:18:46
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF3716.JPG"
 excerpt: ""
 ---

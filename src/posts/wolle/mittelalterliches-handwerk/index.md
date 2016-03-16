@@ -3,8 +3,6 @@ title: "Mittelalterliches Handwerk"
 category: wolle
 author: Ermeline
 date: 2013-07-27 22:19:21
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: ""
 ---
 

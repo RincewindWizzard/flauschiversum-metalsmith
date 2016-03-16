@@ -3,8 +3,6 @@ title: "Der Monet auf dem WC"
 category: nähen
 author: Lucy
 date: 2015-01-18 20:30:23
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF2030.JPG"
 excerpt: "Weil mein Gästebad so langweilig aussah, beschloß ich, es mit einem Bild zu verschönern. Und was paßt in einen solchen Raum besser, als ein Seerosenquilt a la Monet?"
 ---
@@ -29,9 +27,7 @@ So verziert der gute alte Claude Monet
 
 mein tristes kleines Gäste WC.
 
-<div class="slideshow_landscape">
 ![DSCF2031](DSCF2031.jpg)
 ![DSCF2032](DSCF2032.jpg)
-</div>
 
 Viel Spaß, eure Lucy!

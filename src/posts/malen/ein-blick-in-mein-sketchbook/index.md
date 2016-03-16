@@ -2,8 +2,6 @@
 title: "Ein Blick in mein Sketchbook"
 author: Ermeline
 date: 2015-08-26 14:33:00
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: Drachenauge.jpg
 category: malen
 excerpt: "Ich habe heute im Bus gezeichnet."
@@ -16,7 +14,6 @@ Es folgen die Kategorien:
 
 # Frauen und Engel
 
-<div class="slideshow_portrait">
 ![Frau von Hinten](DSCF3152.jpg)
 ![Elfe](DSCF3156.jpg)
 ![Engel schwebt](DSCF3157.jpg)
@@ -28,21 +25,17 @@ Es folgen die Kategorien:
 ![Todesengel 1](DSCF3166.jpg)
 ![Engel mit offenen Armen](DSCF3167.jpg)
 ![Gefallener Engel](DSCF3178-e1440600195369.jpg)
-</div>
 
-<div class="slideshow_landscape">
 ![Engel greift nach einer Hand](DSCF3153.jpg)
 ![Engel fliegt](DSCF3154.jpg)
 ![Frau liegt auf Sofa](DSCF3155.jpg)
 ![Todesengel 2](DSCF3168.jpg)
 ![Frau im Herbstwind](DSCF3179.jpg)
 ![Wirbelndes Mädchen](DSCF3180.jpg)
-</div>
 
 
 # Gesichter und Gesichtsteile
 
-<div class="slideshow_portrait">
 ![Frauengesicht](DSCF3169-e1440597870847.jpg)
 ![Frau greift nach Herz](DSCF3192.jpg)
 ![Mädchen mit Spaghettishirt](DSCF3207-e1440597958823.jpg)
@@ -51,9 +44,7 @@ Es folgen die Kategorien:
 ![Frauengesicht](DSCF3215.jpg)
 ![Katzenmädchen](DSCF3234-e1440598060349.jpg)
 ![Gesicht mit Muster](DSCF3218.jpg)
-</div>
 
-<div class="slideshow_landscape">
 ![Drachenauge](Drachenauge.jpg)
 ![Drachenauge 2](DSCF3196.jpg)
 ![Gesichtspuzzle](DSCF3201.jpg)
@@ -61,12 +52,10 @@ Es folgen die Kategorien:
 ![Auge 2](DSCF3206.jpg)
 ![Auge 3](DSCF3208.jpg)
 ![Katze im Auge](DSCF3216.jpg)
-</div>
 
 
 # Grusel
 
-<div class="slideshow_portrait">
 ![RIP Santa](DSCF3202-e1440598378966.jpg)
 ![Zyklop](DSCF3162.jpg)
 ![Warzengesicht](DSCF3163.jpg)
@@ -75,40 +64,30 @@ Es folgen die Kategorien:
 ![Blutendes Auge](DSCF3229-e1440598425767.jpg)
 ![Genähte Wunde](DSCF3230.jpg)
 ![Tod Death Hate Skull](DSCF3233-e1440598499416.jpg)
-</div>
 
-<div class="slideshow_landscape">
 ![Augapfel](DSCF3226.jpg)
 ![Spinne](DSCF3232.jpg)
 ![Schleimmonster](DSCF3228.jpg)
-</div>
 
 
 # Kuschel und niedlich
 
-<div class="slideshow_portrait">
 ![Grinsekatze 1](DSCF3172-e1440598992217.jpg)
 ![Sitzende Katze](DSCF3174-e1440599005287.jpg)
 ![Grinsekatze 4](DSCF3176-e1440599039345.jpg)
-</div>
 
-<div class="slideshow_landscape">
 ![Grinsekatze 2](DSCF3173.jpg)
 ![Grinsekatze 3](DSCF3175.jpg)
 ![Grinsekatze 5](DSCF3177.jpg)
-</div>
 
 
 # Gedöns
 
-<div class="slideshow_portrait">
 ![Rose mit Flügeln](DSCF3211-e1440599335557.jpg)
 ![Kritzel Punk](DSCF3217-e1440598009578.jpg)
 ![Schreibutensilien](DSCF3235-e1440599377752.jpg)
 ![Herzen](DSCF3231-e1440599361885.jpg)
-</div>
 
-<div class="slideshow_landscape">
 ![Sonne Mond Frauenkopf](DSCF3198.jpg)
 ![Hüte](DSCF3225.jpg)
 ![magic](DSCF3199.jpg)
@@ -119,5 +98,4 @@ Es folgen die Kategorien:
 ![Alphabet 2](DSCF3213.jpg)
 ![Love Doodle](DSCF3219.jpg)
 ![Herz Doodle](DSCF3220.jpg)
-</div>
 

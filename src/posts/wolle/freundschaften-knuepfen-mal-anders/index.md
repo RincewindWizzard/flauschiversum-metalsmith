@@ -3,8 +3,6 @@ title: "Freundschaften knüpfen mal anders"
 category: wolle
 author: Ermeline
 date: 2014-07-23 12:52:24
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Freundschaftsbänder kennt jeder und hat bestimmt auch schon so mancher ausprobiert..."
 ---
 

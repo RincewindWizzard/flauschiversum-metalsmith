@@ -3,8 +3,6 @@ title: "Karstadt"
 category: basteln
 author: Ermeline
 date: 2013-07-28 01:04:03
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Für ältere Herrschaften mag Karstadt noch eine Art Qualitätssiegel besitzen..."
 ---
 

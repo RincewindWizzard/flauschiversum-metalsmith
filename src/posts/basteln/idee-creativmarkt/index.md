@@ -3,8 +3,6 @@ title: "idee Creativmarkt"
 category: basteln
 author: Ermeline
 date: 2013-07-28 01:01:06
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Wenn man das Gefühl hat man weiß nicht was man machen soll..."
 ---
 

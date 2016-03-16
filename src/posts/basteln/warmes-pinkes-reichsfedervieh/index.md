@@ -3,8 +3,6 @@ title: "Warmes, pinkes Reichsfedervieh..."
 category: basteln
 author: Tomcat
 date: 2014-07-30 19:23:04
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "12248761_935689423133134_1315111363_n.jpg"
 excerpt: "Endlich wieder ein Bastelpost im Flauschiversum!"
 ---

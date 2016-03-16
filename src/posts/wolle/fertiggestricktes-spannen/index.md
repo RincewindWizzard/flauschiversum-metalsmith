@@ -3,8 +3,6 @@ title: "Fertiggestricktes Spannen"
 category: wolle
 author: Ermeline
 date: 2013-07-28 00:05:43
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Nicht jeder hat einen großen Keller für eine Styroporwand..."
 ---
 

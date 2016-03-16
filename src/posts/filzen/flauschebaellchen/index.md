@@ -3,8 +3,6 @@ title: "Flauschebällchen"
 category: filzen
 author: Ermeline
 date: 2013-07-28 17:23:39
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Als ich angefangen habe Wolle selbst zu waschen, zu kämmen und zu verarbeiten, habe ich mich beim Spinnen geärgert..."
 ---
 

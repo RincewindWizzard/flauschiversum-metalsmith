@@ -3,8 +3,6 @@ title: "Hüte stärken"
 category: filzen
 author: Ermeline
 date: 2014-01-02 22:17:59
-template: article.jade
-filename: /:year/:month/:title/index.html
 excerpt: "Also wenn man einen Verkäufer fragt, wie man einen Hut steifen kann, so wird er vermutlich auf teure Kleiderstärke verweisen."
 ---
 

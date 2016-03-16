@@ -3,8 +3,6 @@ title: "(F)Lauschangriff"
 category: filzen
 author: Ermeline
 date: 2014-04-29 21:05:07
-template: article.jade
-filename: /:year/:month/:title/index.html
 image: "DSCF0592.jpg"
 excerpt: "Es war einmal... ... ein Freund und der wollte (wie könnte es anders sein...) einen Hut."
 ---
@@ -14,24 +12,20 @@ excerpt: "Es war einmal... ... ein Freund und der wollte (wie könnte es anders 
 Es war einmal... ... ein Freund und der wollte (wie könnte es anders sein...) einen Hut. Und wie man den Hut macht, kann im Folgenden begutachtet werden.  
 
 
-<div class="slideshow_landscape">
 ![DSCF0555](DSCF0555.jpg)
 ![DSCF0556](DSCF0556.jpg)
 ![DSCF0572](DSCF0572.jpg)
 ![DSCF0573](DSCF0573.jpg)
-</div>
 
 Diesmal habe ich mich zusammengerissen und von Anfang bis Ende mit Fotos dokumentiert, stell dich also auf einen längeren Beitrag ein.
 
 Man braucht ganz klar eine Idee bevor man starten kann, glücklicherweise kam ein Freund mit dieser grandiosen Idee genau zum richtigen Zeitpunkt. Also habe ich mir Gedanken gemacht und ein paar Skizzen angefertigt, unter Zuhilfenahme meiner Filz und Nähbücher, denn Hasenohren wollen schließlich die richtige Form haben. Tja und dann ab zum [Wolldealer](http://www.dewullstuuv.de/shop/?XTCsid=c7e1ac307d900ccfcb00aa599ea032c0) des Vertrauens...
 
 
-<div class="slideshow_landscape">
 ![DSCF0571](DSCF0571.jpg)
 ![DSCF0574](DSCF0574.jpg)
 ![DSCF0576](DSCF0576.jpg)
 ![DSCF0577](DSCF0577.jpg)
-</div>
 
 Als besagter Freund das Konzept abgenommen hatte, habe ich für den Hut eine Hohlform angefertigt um die der Hut gefilzt wird. Danach wird die Wolle ausgelegt, jeweils abwechselnd waagerecht und senkrecht. Insgesamt habe ich 9 Schichten gelegt.
 
@@ -56,10 +50,8 @@ Schreibt euch auf einem Zettel am besten auf wie ihr die Schichten gelegt habt, 
 Ich klappe ca. alle 2 Schichten die Ränder vom zuerst gefilzten Stück um.
 
 
-<div class="slideshow_landscape">
 ![DSCF0582](DSCF0582.jpg)
 ![DSCF0583](DSCF0583.jpg)
-</div>
 
 Auf diese Weise verfilzen die Ränder zuverlässig durch mehrere Schichten miteinander und es gibt keine Löcher. Bis die letzte Schicht gelegt ist verfahre ich so und dann geht die Planscherei wieder los... einmal nass machen bitte!
 
@@ -87,19 +79,15 @@ Die Ohren einklappen, damit es richtige Löffel werden, dann das unbehandelte En
 So, wenn beide Öhrchen an der richtigen Stelle sitzen dann wollen wir die mal so richtig walken, jetzt wird der Filz dicker und der Hut stabiler und robuster aber er schrumpft auch. Also aufgepasst, wenn man zu viel walkt passt er am Ende nicht mehr, also immer mal schauen ob der Kopf noch reinpasst und wenn er die richtige Größe hat, geht es an die Feinarbeit.
 
 
-<div class="slideshow_landscape">
 ![DSCF0587](DSCF0587.jpg)
 ![DSCF0588](DSCF0588.jpg)
-</div>
 
 Jetzt muss die Krempe in Form gebracht werden und die Löffel brauchen noch Form, der Zipfel soll auch noch nach hinten schauen, also... walk, walk, walk...scheint ok zu sein, waschen wir mal die Seife raus und neutralisieren die Reste anschließend mit Essig und waschen nochmal durch... ein letztes Mal anpassen und mit Zeitungspapier ausstopfen und trocknen lassen. Dieser meiner Hüte braucht definitiv keine Stärke.
 
 
-<div class="slideshow_landscape">
 ![DSCF0589](DSCF0589.jpg)
 ![DSCF0591](DSCF0591.jpg)
 ![DSCF0590](DSCF0590.jpg)
 ![DSCF0593](DSCF0593.jpg)
-</div>
 
 Tja, und nach 5 Stunden Non-Stop-Arbeit ist der Hut mit den Hasenohren fertig. Und der Besitzer glücklich, wie man sieht.    
