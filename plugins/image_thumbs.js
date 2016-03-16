@@ -9,14 +9,16 @@ var gm = require('gm'),
     mkdirp = require('mkdirp'),
     fs = require('fs');
 
+var debug = false;
+
 function createThumbnail(file, files, width, done) {
   var src = path.join('src', files[file].src_filename)
   var thumb_file = file.replace(path.basename(file), path.join(width + 'x', path.basename(file)))
-  var cache = path.join('/tmp/flauschiversum-metalsmith/', thumb_file)
+  var cache = path.join('./.cache/', thumb_file)
 
   fs.readFile(cache, (err, data) => {
     if (err) {
-      console.log('Resizing ' + src)
+      if(debug) console.log('Resizing ' + src)
       imageMagick(src)
         .resize(width)
         .autoOrient()
@@ -28,7 +30,7 @@ function createThumbnail(file, files, width, done) {
               else {
                 fs.writeFile(cache, buffer, function(err) {
                     if(err) console.log(err);
-                    else console.log('Cached ' + cache)
+                    else if(debug) console.log('Cached ' + cache)
                 }); 
               }
             });
@@ -40,7 +42,7 @@ function createThumbnail(file, files, width, done) {
        })
     }
     else {
-      console.log('Load from cache ' + cache)
+      if(debug) console.log('Load from cache ' + cache)
       files[thumb_file] = {
         'contents': data
       }
@@ -50,7 +52,9 @@ function createThumbnail(file, files, width, done) {
 }
 
 
-module.exports = function() {
+module.exports = function(dbg) {
+  //if(dbg) debug = dbg
+
   return function(files, metalsmith, done) {
     var batch = []
 
@@ -62,7 +66,7 @@ module.exports = function() {
         }
       }
     }
-    async.parallel(batch, done)
+    async.parallelLimit(batch, 10, done)
    
   };
 }

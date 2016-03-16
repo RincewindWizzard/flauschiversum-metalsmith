@@ -1,11 +1,19 @@
+- var paginationSize = 11
 .center
   ul.pagination
-    li
-      a(href='#') «
-
-    each page in [1,2,3,4,5,6,7,8]
+    if currentPage - 1 >= 0
       li
-        a(href='#')= page
+        a(href=pages[currentPage - 1].url) «
 
-    li
-      a(href='#') »
+    each page, pageNum in pages
+      if Math.abs(pageNum - currentPage) < paginationSize / 2 || (currentPage < paginationSize / 2 && pageNum < paginationSize)
+        if pageNum == currentPage
+          li
+            a(href=page.url).active= parseInt(pageNum) + 1
+        else
+          li
+            a(href=page.url)= parseInt(pageNum) + 1
+
+    if Object.keys(pages).length > currentPage + 1
+      li
+        a(href=pages[currentPage + 1].url) »

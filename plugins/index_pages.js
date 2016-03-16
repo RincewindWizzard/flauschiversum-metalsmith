@@ -36,11 +36,25 @@ function posts_by_category(files) {
 function add_index_pages(files) {
   var categories = posts_by_category(files)
   for(var cat in categories) {
-    files[path.join(cat, 'index.html')] = {
-      'layout': 'index.jade',
-      'category': cat,
-      'posts': categories[cat].slice(0, posts_per_page),
-      'contents': ''
+    var pages = {}
+    for(var page=0; page * posts_per_page < categories[cat].length; page++) {
+      var url = page == 0 ? 
+        path.join(cat, 'index.html') : 
+        path.join(cat, 'page', ''+page, 'index.html')
+      //console.log(url)
+      files[url] = {
+        'url' : path.join('/', url),
+        'currentPage': page,
+        'layout': 'index.jade',
+        'category': cat,
+        'posts': categories[cat].slice(page * posts_per_page, page * posts_per_page + posts_per_page),
+        'contents': ''
+      }
+      pages[page] = files[url]
+
+      for(var page in pages) {
+        pages[page]['pages'] = pages
+      }
     }
   }
 }
