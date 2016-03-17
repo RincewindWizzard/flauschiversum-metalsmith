@@ -9,7 +9,7 @@ var gm = require('gm'),
     mkdirp = require('mkdirp'),
     fs = require('fs');
 
-var debug = false;
+var debug = true;
 
 function createThumbnail(file, files, width, done) {
   var src = path.join('src', files[file].src_filename)

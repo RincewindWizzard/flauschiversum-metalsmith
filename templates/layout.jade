@@ -8,9 +8,18 @@ html(lang="de")
       link(rel="stylesheet", href="/style/main.css")
       title
         block title
-          = locals.name
+          = title
   body
-    block content
-      != contents
+    .container-fluid
+      header#blogheader
+        block header
+          div.logo
+            h1
+              a(href='/') Flauschiversum
+            p.description Mehr als nur eine Masche
+              small immer Sonntags
+      block content
+        != contents
 
-    script(src='/js/jquery.js')
+    script(src='/script/jquery.js')
+    script(src='/script/slideshow.js')

@@ -1,0 +1,8 @@
+.slideshow
+  .mask
+    ul
+      each image in images
+        li(id=image.id)
+          a(href='#').center 
+            img(src=image.src, alt=image.alt)
+          .tooltip!=image.alt            

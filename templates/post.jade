@@ -3,7 +3,15 @@ extends ./layout.jade
 block title
   = title
 
+block append header
+  .post-header
+    h2= title
+    .center
+      img(src=image)
+    p.author Von 
+      a(href='/autoren.html#' + author.toLowerCase())= author
+
 block content
-  .container-fluid
-    main
+     
+    main.page
       != contents

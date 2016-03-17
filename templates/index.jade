@@ -1,50 +1,40 @@
 extends ./layout.jade
 
-block title
-  = title
+block append header
+  div.category-images
+    if (!category && currentPage == 0) || category == 'basteln'
+      a(href='/basteln/')
+        h2 Basteln
+        img.category(src='/images/Basteln.jpg')
+        p Mit Klebe und Schere bestückt,<br/> wird mit Liebe geschmückt.
+    if (!category && currentPage == 0) || category == 'brandings'
+      a(href='/brandings/')
+        h2 Brandings
+        img.category(src='/images/Brandings.jpg')
+        p Die Haut zu dick? Das ist egal,<br/> bebrannt wird auch das Holzregal.
+    if (!category && currentPage == 0) || category == 'filzen'
+      a(href='/filzen/')
+        h2 Filzen
+        img.category(src='/images/Filzen.jpg')
+        p Wasser, Seife, Wolle,<br/> reibe nicht zu dolle.
+    if (!category && currentPage == 0) || category == 'malen'
+      a(href='/malen/')
+        h2 Malen
+        img.category(src='/images/Malen.jpg')
+        p Pinselstrich und Mine, geben mir die Muße,<br/> dem ersten Zug, ein Neuer folgt zum Gruße.
+    if (!category && currentPage == 0) || category == 'naehen'
+      a(href='/naehen/')
+        h2 Nähen
+        img.category(src='/images/Naehen.jpg')
+        p Mit Nadel und Faden in den Krieg,<br/> erreichen kannst du nur den Sieg.
+    if (!category && currentPage == 0) || category == 'wolle'
+      a(href='/wolle/')
+        h2 Wolle
+        img.category(src='/images/Wolle.jpg')
+        p Spinne, häkel, webe, sticke,<br/> knüpfe dir nur keine Stricke.
 
 block content
-  .container-fluid
-    header#blogheader
-      div.logo
-        h1
-          a(href='/') Flauschiversum
-        p.description Mehr als nur eine Masche
-          small immer Sonntags
-
-      div.category-images
-        if (!category && currentPage == 0) || category == 'basteln'
-          a(href='/basteln/')
-            h2 Basteln
-            img.category(src='/images/Basteln.jpg')
-            p Mit Klebe und Schere bestückt,<br/> wird mit Liebe geschmückt.
-        if (!category && currentPage == 0) || category == 'brandings'
-          a(href='/brandings/')
-            h2 Brandings
-            img.category(src='/images/Brandings.jpg')
-            p Die Haut zu dick? Das ist egal,<br/> bebrannt wird auch das Holzregal.
-        if (!category && currentPage == 0) || category == 'filzen'
-          a(href='/filzen/')
-            h2 Filzen
-            img.category(src='/images/Filzen.jpg')
-            p Wasser, Seife, Wolle,<br/> reibe nicht zu dolle.
-        if (!category && currentPage == 0) || category == 'malen'
-          a(href='/malen/')
-            h2 Malen
-            img.category(src='/images/Malen.jpg')
-            p Pinselstrich und Mine, geben mir die Muße,<br/> dem ersten Zug, ein Neuer folgt zum Gruße.
-        if (!category && currentPage == 0) || category == 'naehen'
-          a(href='/naehen/')
-            h2 Nähen
-            img.category(src='/images/Naehen.jpg')
-            p Mit Nadel und Faden in den Krieg,<br/> erreichen kannst du nur den Sieg.
-        if (!category && currentPage == 0) || category == 'wolle'
-          a(href='/wolle/')
-            h2 Wolle
-            img.category(src='/images/Wolle.jpg')
-            p Spinne, häkel, webe, sticke,<br/> knüpfe dir nur keine Stricke.
-
-    main
+    main#index
       include ./lib/pagination.jade
       each post in posts
         .center
