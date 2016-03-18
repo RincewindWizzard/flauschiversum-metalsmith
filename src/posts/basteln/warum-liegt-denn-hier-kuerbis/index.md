@@ -12,7 +12,7 @@ excerpt: "Bald ist Halloween und wann wenn nicht jetzt, ist es an der Zeit ein T
 Bald ist Halloween und wann wenn nicht jetzt, ist es an der Zeit ein Tutorial zum Kürbisschnitzen zu machen? Du brauchst dazu einen Kürbis und Schnitzwerkzeuge und zum Schluss einen Tuschkasten und einen feinen Pinsel.
 
 
-![Abtragen](Abtragen.jpeg)
+![Abtragen](Abtragen.jpg)
 
 Unser Kürbis soll ein kleines freches Grinsen mit einem Zyklopenauge bekommen. Hierfür höhlen wir den Kürbis nicht aus, als Vorbereitung soll lediglich das Abtragen der grünen Schale dienen. Anhand der Form kann man schon die Lage des Auges erahnen und wie breit das Grinsen des Kürbis wird.
 
@@ -23,8 +23,8 @@ Mit einer Nadel o.Ä. kann man sich anritzen, wo die wichtigsten Teile des Gesic
 
 
 ![Schnitzen1](Schnitzen1.jpg)
-![Schnitzen2](Schnitzen2.jpeg)
-![Feintuning](Feintuning.jpeg)
+![Schnitzen2](Schnitzen2.jpg)
+![Feintuning](Feintuning.jpg)
 
 Wenn ihr die Formen gefunden habt, geht es an das Ausdefinieren. Die Zähne müssen runder und die Mundwinkel tiefer, das Auge muss noch sein Lid bekommen und etwas tiefer liegen, auch die Falten um die Mundwinkel verdienen nun eure Aufmerksamkeit, wenn euch die Formen und Falten gefallen, geht es nun an das Finishing.  
 

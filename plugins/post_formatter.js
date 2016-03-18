@@ -24,6 +24,7 @@ module.exports = function() {
             var img_obj = {}
             img_obj.alt = img.match(/\[([^\]]*)\]/)[1]
             img_obj.src = img.match(/\(([^\)]*)\)/)[1]
+            img_obj.full_src = img_obj.src
 
             // add resized image for lokal assets
             img_obj.id = slugify(img_obj.src)
@@ -34,7 +35,7 @@ module.exports = function() {
           post.contents = post.contents.replace(
             slideshow,
             jade.renderFile(slideshow_template, { 'images': img_list, 'slugify': slugify })
-          )
+          ).replace(/!\[([^\]]*)\]\(([^\)]*)\)/g, '<div class="center">$&</div>')
         })
 
           //'\n<div class="slideshow">\n$&\n</div>'

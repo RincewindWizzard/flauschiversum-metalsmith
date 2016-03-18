@@ -9,9 +9,19 @@ block append header
     .center
       img(src=image)
     p.author Von 
-      a(href='/autoren.html#' + author.toLowerCase())= author
+      a(href='/autoren.html#' + author.toLowerCase()).author= author
+    .center
+      small Schreibe Ihr eine 
+        a.mailto(href='mailto:ermeline@flauschiversum.de') Antwort
+        | !
 
 block content
-     
     main.page
       != contents
+      div.fb-like(data-href="https://flauschiversum.de" + url, data-layout="standard", data-action="like", data-show-faces="true", data-share="true")
+      div(data-href="https://flauschiversum.de" + url, data-numposts="5").fb-comments 
+
+block append js
+  script(src='/script/jquery.js')
+  script(src='/script/responsiveslides.min.js')
+  script(src='/script/slideshow.js')
