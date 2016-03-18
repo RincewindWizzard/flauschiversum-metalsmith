@@ -16,7 +16,7 @@ module.exports = function() {
         post['layout'] = 'post.jade'
         post.contents = post.contents.toString('utf8')
 
-        var slideshows = post.contents.match(/!\[[^\]]*\]\([^\)]*\)(\n*!\[[^\]]*\]\([^\)]*\))+/g)
+        var slideshows = post.contents.match(/(\n*!\[[^\]]*\]\([^\)]*\))+/g)
         if(slideshows) slideshows.forEach((slideshow) => {
           var img_list = []
           var images = slideshow.match(/!\[([^\]]*)\]\(([^\)]*)\)/g)
@@ -35,7 +35,7 @@ module.exports = function() {
           post.contents = post.contents.replace(
             slideshow,
             jade.renderFile(slideshow_template, { 'images': img_list, 'slugify': slugify })
-          ).replace(/!\[([^\]]*)\]\(([^\)]*)\)/g, '<div class="center">$&</div>')
+          )
         })
 
           //'\n<div class="slideshow">\n$&\n</div>'
