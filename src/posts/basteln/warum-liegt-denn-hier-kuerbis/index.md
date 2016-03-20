@@ -17,7 +17,7 @@ Bald ist Halloween und wann wenn nicht jetzt, ist es an der Zeit ein Tutorial zu
 Unser Kürbis soll ein kleines freches Grinsen mit einem Zyklopenauge bekommen. Hierfür höhlen wir den Kürbis nicht aus, als Vorbereitung soll lediglich das Abtragen der grünen Schale dienen. Anhand der Form kann man schon die Lage des Auges erahnen und wie breit das Grinsen des Kürbis wird.
 
 
-![Markieren](Markieren.jpeg)
+![Markieren](Markieren.jpg)
 
 Mit einer Nadel o.Ä. kann man sich anritzen, wo die wichtigsten Teile des Gesichtes liegen sollen, das hilft einem bei den ersten Schnitten mit dem Messer. Beginnt nun mit den Details, erstmal schnitzt ihr im Groben zum Beispiel die Zähne und das Auge, sucht erstmal die Formen eures Gesichtes.
 

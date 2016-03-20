@@ -17,8 +17,9 @@ module.exports = function() {
     // Post content
     for (var file in files) {
       if(file.match(/^posts\/.*index.html$/)) {
-        var post = files[file]       
-        var dst = moment(post.date).format('YYYY/MM/') + slugify(post.title)
+        var post = files[file]
+        var slug = slugify(post.title.replace(/&/g, '')).replace(/\./g, '')
+        var dst = moment(post.date).format('YYYY/MM/') + slug
         post.url = '/' + dst + '/'
         if(post.image) post.image = path.join(post.url, '300x', post.image)
         mv[path.dirname(file)] = dst

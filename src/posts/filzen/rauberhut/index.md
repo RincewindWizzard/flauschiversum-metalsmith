@@ -12,7 +12,7 @@ excerpt: "Nach langer Zeit hat die Ermeline mal wieder einen Hut gefilzt. "
 ![Räuberhut rechts](DSCF2725.jpg)
 ![Räuberhut hinten](DSCF2726.jpg)
 
-Nach langer Zeit hat die Ermeline mal wieder einen Hut gefilzt. Für diesen Räuberhut konnte ich die [Spitzhutvorlage](/2014/07/ermelines-neuer-hexenhut-2/"Ermelines neuer Hexenhut") von den Zauberhüten nehmen und musste dafür einfach nur die Spitze umklappen. Wenn du das auch so machen möchtest, dann achte darauf, dass du den Hut noch nicht zu stark gewalkt hast an der Spitze, damit du eine schöne runde Form bilden kannst, denn du wirst von der geraden Kante der Vorlage Ecken an der Hutspitze haben.
+Nach langer Zeit hat die Ermeline mal wieder einen Hut gefilzt. Für diesen Räuberhut konnte ich die [Spitzhutvorlage](/2014/07/ermelines-neuer-hexenhut/) von den Zauberhüten nehmen und musste dafür einfach nur die Spitze umklappen. Wenn du das auch so machen möchtest, dann achte darauf, dass du den Hut noch nicht zu stark gewalkt hast an der Spitze, damit du eine schöne runde Form bilden kannst, denn du wirst von der geraden Kante der Vorlage Ecken an der Hutspitze haben.
 
 
 ![Räuberhut oben links](DSCF2717.jpg)
