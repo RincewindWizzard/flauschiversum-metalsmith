@@ -12,13 +12,15 @@ Wenn man mal ein paar besonders schöne Briefumschläge braucht, macht man sie s
 ![Briefumschläge](DSCF4049.JPG)
 
 Du brauchst:
-alte Zeitschriften mit großen Bildern (möglichst wenig Text auf den Bildern, ich benutze die "LandLust")
-Klebe
-Schere
-Stift zum Anzeichnen
-Lineal
-Falzbein oder stumpfen Brieföffner
-Karton für die Schablone
+
+- alte Zeitschriften mit großen Bildern (möglichst wenig Text auf den Bildern, ich benutze die "LandLust")
+- Klebe
+- Schere
+- Stift zum Anzeichnen
+- Lineal
+- Falzbein oder stumpfen Brieföffner
+- Karton für die Schablone
+
 
 Zunächst habe ich einen Bogen Din A4 Papier gefaltet und mich dann an den Maßen orientiert um meine Schablone zu machen. An jedem Rand habe ich noch mindestens einen Millimeter Zugabe gemacht und mir den Umriss des Briefes auf die Pappe gemalt. Meine Maße sind ca 15,4cm * 10,8cm. 1,5cm sind mein Kleberand mit abgeschrägten Kanten. Sowie die Schließlasche von ca. 3cm. Der Einfachheit halber kannst du auch einen schlichten Briefumschlag auseinander nehmen und dich an diesen Maßen orientieren. Man kann natürlich auch die länglichen Umschläge basteln, um die Maße zu ermitteln muss man dann den Papierbogen dritteln und demnach die Schablone basteln.
 
