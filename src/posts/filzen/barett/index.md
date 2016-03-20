@@ -7,16 +7,16 @@ image: "DSCF3009.jpg"
 excerpt: "Ich brauche für meinen neuen LARP-Charakter eine neuen Hut, denn ausnahmsweise bin ich mal keine Hexe sondern eine Wollwerkerin."
 ---
 
-Ich brauche für meinen neuen LARP-Charakter eine neuen Hut, denn ausnahmsweise bin ich mal keine Hexe sondern eine Wollwerkerin. Damit nicht das Spitzhutklischee auf meinen neuen Char übertragen wird, ist es diesmal ein Barett. Und so sieht es dann aus, wenn der Durchmesser der Hohlform angepasst wurde und keine [Katzenhöhle](http://flauschiversum.de/2015/07/katzenhoehle/) mehr entstanden ist. Am gleichen Tag ist auch noch eine schlichte [Tasche](http://flauschiversum.de/2015/07/filzen-filzen-filzen/) entstanden aber man braucht ja auch was fürs Auge.
+Ich brauche für meinen neuen LARP-Charakter eine neuen Hut, denn ausnahmsweise bin ich mal keine Hexe sondern eine Wollwerkerin. Damit nicht das Spitzhutklischee auf meinen neuen Char übertragen wird, ist es diesmal ein Barett. Und so sieht es dann aus, wenn der Durchmesser der Hohlform angepasst wurde und keine [Katzenhöhle](/2015/07/katzenhoehle/) mehr entstanden ist. Am gleichen Tag ist auch noch eine schlichte [Tasche](/2015/07/filzen-filzen-filzen/) entstanden aber man braucht ja auch was fürs Auge.
 
-![Barett](DSCF3012.jpg)
-![Barett](DSCF3013.jpg)
-![Barett](DSCF3015.jpg)
-![Barett](DSCF3016.jpg)
+![Barett Kopfloch](DSCF3012.jpg)
+![Barett oben](DSCF3013.jpg)
+![eingefilzter Blumenstoff](DSCF3015.jpg)
+![eingefilztes Wolltuch](DSCF3016.jpg)
 
 Das dürfte ein auffälliges Accessoire sein. Jetzt nur noch irgendwo 'ne hübsche Brosche dran und alles tutti.
 
-![Barett](DSCF3009.jpg)
-![Barett](DSCF3010.jpg)
-![Barett](DSCF3011.jpg)
-![Barett](DSCF3008.jpg)
+![Barett vorne](DSCF3009.jpg)
+![Barett links](DSCF3010.jpg)
+![Barett hinten](DSCF3011.jpg)
+![Barett rechts](DSCF3008.jpg)

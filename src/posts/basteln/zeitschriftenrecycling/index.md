@@ -10,60 +10,60 @@ excerpt: "Das mir hier bloß keiner die Rentner-Bravo belächelt! Ich habe mit i
 Das mir hier bloß keiner die Rentner-Bravo belächelt! Ich habe mit ihr soooo viel Spaß, weil da ganz tolle Farben drin sind. Der oben abgebildete Brotkorb ist aus der Apothekenrundschau gebastelt. Im Folgenden zeige ich euch wie es geht.
 
 
-![DSCF1335](DSCF1335.jpg)
-![DSCF1336](DSCF1336.jpg)
+![Zeitschrift aufrollen](DSCF1335.jpg)
+![Rolle kleben](DSCF1336.jpg)
 
 Nehmt euch eine Doppelseite aus einer Zeitschrift und drittelt sie in der Länge (auf dem Bild ist der Streifen schon zu breit!!). Diesen Streifen wickelt ihr auf einer Stricknadel oder einen Schaschlikspieß auf (so wie gezeigt). Zu sehen ist dabei die obere Kante der Rückseite, weil dadurch die bunten Farben auf der sichtbaren Außenseite zu sehen sind. Ich mache einen kleinen Klebestrich zur Fixierung, wichtig ist die obere Ecke gut einzukleistern.
 
 
-![DSCF1337](DSCF1337.jpg)
-![DSCF1338](DSCF1338.jpg)
+![fertige Rolle](DSCF1337.jpg)
+![Rolle glätten](DSCF1338.jpg)
 
 Jetzt solltet ihr so eine Rolle haben. Die dann mit einem Stift platt gedrückt wird, nachdem man sie von der Nadel gezogen hat.
 
 
-![DSCF1339](DSCF1339.jpg)
-![DSCF1340](DSCF1340.jpg)
+![Schnecke wickeln](DSCF1339.jpg)
+![fertige Schnecken](DSCF1340.jpg)
 
 Diese platte Rolle rollt ihr wiederum auf einen Stift oder etwas anderes rundes oder eckiges auf. Einkleistern nicht vergessen... Und irgendwann habt ihr dann viele bunte Hariboschnecken aus Papier. Ihr könnt sie bemalen oder im Urzustand belassen.
 
 
-![DSCF1341](DSCF1341-e1422103198308.jpg)
+![Bodenschnecke](DSCF1341-e1422103198308.jpg)
 
 Jetzt gehts ans Zusammenfügen. Für den Boden habe ich ganz viele Streifen zusammengeklebt bis ich den Boden meiner Hohlkörperform (hier ein Plastikblumentopf) bedeckt habe (zwischendurch immer die Schnecke flachdrücken, sonst steht das Ding nicht richtig). Jetzt klebe ich die kleinen Schnecken mit Holzleim oder einem anderen Bastelkleber an den Rand des Bodens, damit sie nicht runterrutschen befestige ich sie mit Tesafilm, bis der Leim angetrocknet ist.
 
 
-![DSCF1346](DSCF1346.jpg)
-![DSCF1347](DSCF1347.jpg)
-![DSCF1344](DSCF1344.jpg)
+![blau silberne Schale](DSCF1346.jpg)
+![blau silberne Schale stehend](DSCF1347.jpg)
+![benutzte Farben](DSCF1344.jpg)
 
 Jetzt lasst eurer Fantasie freien Lauf. Ich freue mich auch über Bilder eurer Kreationen.
 
-![DSCF1342](DSCF1342-e1422103171313.jpg)
-![DSCF1348](DSCF1348-e1422103460448.jpg)
-![DSCF1350](DSCF1350-e1422103483979.jpg)
+![weiß bunte Schale](DSCF1342-e1422103171313.jpg)
+![Stiftehalter](DSCF1348-e1422103460448.jpg)
+![Bilderrahmen mit Glitzersteinen](DSCF1350-e1422103483979.jpg)
 
 Und neben Brotkörben kann man auch tolle Bilderrahmen machen und sich beim Verzieren so richtig austoben. Jede Menge Plastikperlen vom Flohmarkt kommen da zum Einsatz.      
 
-![DSCF1349](DSCF1349.jpg)
+![Bilderrahmen](DSCF1349.jpg)
 
 Aber auch Perlen kann man selber machen indem man ca. 25 cm lange spitz zulaufende Papierstreifen über einen Zahnstocher aufrollt.
 
-![DSCF1352](DSCF1352.jpg)
+![Perlen](DSCF1352.jpg)
 
 
 Bei meiner letzten Session sind noch weitere Experimente geglückt.
 
-![DSCF1461](DSCF1461.JPG)
-![DSCF1462](DSCF1462.JPG)
-![DSCF1463](DSCF1463.JPG)
-![DSCF1464](DSCF1464.JPG)
-![DSCF1465](DSCF1465.JPG)
-![DSCF1466](DSCF1466.JPG)
-![DSCF1467](DSCF1467.JPG)
-![DSCF1468](DSCF1468.JPG)
+![türkise Schale oben](DSCF1461.JPG)
+![türkise Schale Seite nah](DSCF1462.JPG)
+![türkise Schale Seite 1](DSCF1463.JPG)
+![türkise Schale Seite 2](DSCF1464.JPG)
+![türkise Schale Seite oben](DSCF1465.JPG)
+![türkise Schale Innen 1](DSCF1466.JPG)
+![türkise Schale Innen 2](DSCF1467.JPG)
+![türkise Schale Boden](DSCF1468.JPG)
 
-![DSCF1469](DSCF1469.JPG)
-![DSCF1470](DSCF1470.JPG)
-![DSCF1471](DSCF1471.JPG)
-![DSCF1472](DSCF1472.JPG)
+![gold silber Schale oben](DSCF1469.JPG)
+![gold silber Schale Seite 1](DSCF1470.JPG)
+![gold silber Schale Seite 2](DSCF1471.JPG)
+![gold silber Schale Seite 3](DSCF1472.JPG)

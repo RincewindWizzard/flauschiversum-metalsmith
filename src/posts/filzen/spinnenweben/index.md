@@ -11,29 +11,28 @@ Im Zuge einer experimentellen Erprobung habe ich mich mit der Spinnwebtechnik au
 
 Hier ein paar Fotos vom Entstehungsprozess
 
-![](DSCF2123.JPG)
-![](DSCF2126.JPG)
-![](DSCF2127.JPG)
-![](DSCF2128.JPG)
-![](DSCF2129.JPG)
-
-![](DSCF2122.JPG)
-![](DSCF2130.JPG)
+![Kammzug](DSCF2123.JPG)
+![aufgelegte Spinnweben](DSCF2126.JPG)
+![Nässen](DSCF2127.JPG)
+![ungefilzte Weben](DSCF2128.JPG)
+![ungefilzter Schal](DSCF2129.JPG)
+![Gesamtansicht](DSCF2122.JPG)
+![Walken](DSCF2130.JPG)
 
 
 Dann schauen wir uns das Schätzchen mal im Detail an wie es aussieht, wenn es fertig ist.
 
-![](DSCF2133.JPG)
-![](DSCF2132.JPG)
-![](DSCF2131.JPG)
-![](DSCF2138.JPG)
-![](DSCF2139.JPG)
-
-
-![](DSCF2134.JPG)
-![](DSCF2137.JPG)
-![](DSCF2136.JPG)
-![](DSCF2143.JPG)
+![Spinnenweben](DSCF2133.JPG)
+![Spinnenweben Fetzen 1](DSCF2132.JPG)
+![Spinnenweben Fetzen 2](DSCF2131.JPG)
+![Schal getragen](DSCF2138.JPG)
+![Schal getragen nah](DSCF2139.JPG)
+![Schal 1](DSCF2134.JPG)
+![Schal 2](DSCF2137.JPG)
+![Schal 3](DSCF2136.JPG)
+![Schal 4](DSCF2143.JPG)
+![Schal 5](DSCF2141.JPG)
+![Schal 6](DSCF2142.JPG)
 
 
 

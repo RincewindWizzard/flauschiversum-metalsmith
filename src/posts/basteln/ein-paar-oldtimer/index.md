@@ -36,7 +36,7 @@ Hier sind einige Strickwaren, die ich irgendwann mal gemacht habe. Das blaue Tuc
 
 ## Gestrickt
 ![MP3-Player](IMG_3744.JPG)
-![MP3-Player](IMG_3745.JPG)
+![MP3-Player aufgewickelt](IMG_3745.JPG)
 ![Handschuh](IMG_4252.JPG)
 ![beide Handschuhe](IMG_4255.JPG)
 ![Tuch Revontuli](IMG_4256.JPG)

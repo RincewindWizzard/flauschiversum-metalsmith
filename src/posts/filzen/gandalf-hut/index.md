@@ -7,9 +7,9 @@ image: "DSCF1386.jpg"
 excerpt: "Und hier haben wir uns heute mal an einen schlichten Zaubererhut gemacht."
 ---
 
-![DSCF1385](DSCF1385.jpg)
-![DSCF1386](DSCF1386.jpg)
-![DSCF1383](DSCF1383.jpg)
-![DSCF1384](DSCF1384.jpg)
+![Gandalfhut links](DSCF1385.jpg)
+![Gandalfhut vorne](DSCF1386.jpg)
+![Gandalfhut rechts](DSCF1383.jpg)
+![Gandalfhut hinten](DSCF1384.jpg)
   
 Und hier haben wir uns heute mal an einen schlichten Zaubererhut gemacht. Die benötigte Zeit beläuft sich auf etwa 3,5 Stunden. Die Falten hab ich schonmal etwas mit dem Dampfbügeleisen bearbeitet, jetzt trocknet er auf meinem Kochtopf. Es fehlt noch das lederne Hutband mit großer Schnalle, die wird dann in Heimarbeit gefertigt, sobald ein Bild vorhanden ist wird es hier hinzugefügt.

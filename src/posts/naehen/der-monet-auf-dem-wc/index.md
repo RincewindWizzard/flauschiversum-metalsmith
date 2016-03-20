@@ -7,7 +7,7 @@ image: "DSCF2030.JPG"
 excerpt: "Weil mein Gästebad so langweilig aussah, beschloß ich, es mit einem Bild zu verschönern. Und was paßt in einen solchen Raum besser, als ein Seerosenquilt a la Monet?"
 ---
 
-![DSCF2030](DSCF2030.JPG)
+![Seerosenquilt](DSCF2030.JPG)
 
 Weil mein Gästebad so langweilig aussah, beschloß ich, es mit einem Bild zu verschönern. Und was paßt in einen solchen Raum besser, als ein Seerosenquilt a la Monet?
 
@@ -27,7 +27,7 @@ So verziert der gute alte Claude Monet
 
 mein tristes kleines Gäste WC.
 
-![DSCF2031](DSCF2031.jpg)
-![DSCF2032](DSCF2032.jpg)
+![Rosen Detail](DSCF2031.jpg)
+![Rose nah](DSCF2032.jpg)
 
 Viel Spaß, eure Lucy!

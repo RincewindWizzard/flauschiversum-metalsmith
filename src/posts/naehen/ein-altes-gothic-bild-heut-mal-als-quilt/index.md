@@ -16,9 +16,9 @@ Für die Ecken habe ich mal das Muster "cathedral window" ausprobiert, weil ich 
 Alles in allem finde ich aber, die Mühe hat sich gelohnt. Eine kreative Woche wünscht euch Lucy.
 
 ![Wandbehang](DSCF3959.JPG)
-![Ecke re u](DSCF3953.JPG)
-![Ecke re o](DSCF3954.JPG)
-![Ecke li u](DSCF3963.JPG)
+![Ecke rechts unten](DSCF3953.JPG)
+![Ecke rechts oben](DSCF3954.JPG)
+![Ecke links unten](DSCF3963.JPG)
 ![Maske](DSCF3956.JPG)
 ![Perlen](DSCF3961.JPG)
 
@@ -26,6 +26,5 @@ Alles in allem finde ich aber, die Mühe hat sich gelohnt. Eine kreative Woche w
 ![Detail](DSCF3955.JPG)
 ![Rosen](DSCF3957.JPG)
 ![Bild](DSCF3960.JPG)
-![Streifen
-](DSCF3962.JPG)
+![Streifen](DSCF3962.JPG)
 

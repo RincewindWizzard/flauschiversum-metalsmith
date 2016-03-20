@@ -22,15 +22,15 @@ Unser Kürbis soll ein kleines freches Grinsen mit einem Zyklopenauge bekommen. 
 Mit einer Nadel o.Ä. kann man sich anritzen, wo die wichtigsten Teile des Gesichtes liegen sollen, das hilft einem bei den ersten Schnitten mit dem Messer. Beginnt nun mit den Details, erstmal schnitzt ihr im Groben zum Beispiel die Zähne und das Auge, sucht erstmal die Formen eures Gesichtes.
 
 
-![Schnitzen1](Schnitzen1.jpg)
-![Schnitzen2](Schnitzen2.jpg)
+![Schnitzen 1](Schnitzen1.jpg)
+![Schnitzen 2](Schnitzen2.jpg)
 ![Feintuning](Feintuning.jpg)
 
 Wenn ihr die Formen gefunden habt, geht es an das Ausdefinieren. Die Zähne müssen runder und die Mundwinkel tiefer, das Auge muss noch sein Lid bekommen und etwas tiefer liegen, auch die Falten um die Mundwinkel verdienen nun eure Aufmerksamkeit, wenn euch die Formen und Falten gefallen, geht es nun an das Finishing.  
 
 
 ![Seitelinks](Seitelinks.jpg)
-![vonOben](vonOben.jpg)
+![von Oben](vonOben.jpg)
 
 Tusche her und Pinsel schwingen. Achtet beim Bemalen darauf, dass eure Tusche nicht zu wässrig ist und macht dunkel, was im Schatten liegt und setzt Akzente erst zum Schluss, so wie hier das Blut auf den Zähnen oder die Adern im Auge. Um dem Kürbis ein wenig Haltbarkeit zu geben (mit intakter Schale halten Kürbisse sich über Monate...) haben wir mit Klarlack eine unsichtbare Schutzschicht nach dem Trocknen der Tusche aufgetragen.
 

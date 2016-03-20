@@ -11,11 +11,11 @@ Es war ja nur eine Frage der Zeit, wann auch ich mich mal an eine Kürbisfratze 
 
 Ein eigenes kleines [Tutorial](http://flauschiversum.de/2014/10/warum-liegt-denn-hier-kurbis/) wird noch folgen. Aber der Ablauf ist wie folgt: Anzeichnen, Ausschnitzen, Feinarbeit, Anmalen, 4 Stunden später...  
 
-![DSCF1734](DSCF1734.jpg)
-![DSCF1742](DSCF1742.jpg)
-![DSCF1741](DSCF1741.jpg)
-![DSCF1739](DSCF1739.jpg)
-![DSCF1740](DSCF1740.jpg)
-![DSCF1747](DSCF1747.jpg)
+![Vorne nah](DSCF1734.jpg)
+![vorne oben](DSCF1742.jpg)
+![rechte Seite](DSCF1741.jpg)
+![Frontansicht](DSCF1739.jpg)
+![linke Seite](DSCF1740.jpg)
+![mit Teelicht](DSCF1747.jpg)
 
 Ich ekel mich selber vor diesem Ding. Insgeheim bin ich froh wenn er in einer Woche anfängt wegzufaulen. Ich weiß tatsächlich nicht ob ich stolz oder enttäuscht bin. Aber ich bin immerhin eine Erfahrung reicher und kann sagen, dass ich schon eine Kürbisfratze geschnitzt habe. In diesem Sinne Happy Halloween!!!

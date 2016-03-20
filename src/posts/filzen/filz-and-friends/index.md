@@ -9,29 +9,30 @@ excerpt: "Einmal ne Frage in die Runde gestellt wer gerne mal mit mir filzen mö
 
 Einmal ne Frage in die Runde gestellt wer gerne mal mit mir filzen möchte und haufenweise Zusagen. Ich habe kürzlich mit ein paar Freunden bei mir gefilzt und bis auf eine Handpuppe, die ebenfalls entstanden ist (die ich aber verpeilt habe zu fotografieren) sind dies die Ergebnisse.
 
-![DSCF3475](DSCF3475.JPG)
-![DSCF3476](DSCF3476.JPG)
-![DSCF3477](DSCF3477.JPG)
-![DSCF3478](DSCF3478.JPG)
+![Katzenhöhle](DSCF3475.JPG)
+![Katzenhöhle links](DSCF3476.JPG)
+![Katzenhöhle Öffnung](DSCF3477.JPG)
+![Katzenhöhle rechts](DSCF3478.JPG)
 
 eine fröhlich grüne Katzenhöhle mit Blümchen für eine Katze vom Format "explodiertes Sofakissen"
 
 
-![DSCF3479](DSCF3479.JPG)
-![DSCF3480](DSCF3480.JPG)
-![DSCF3481](DSCF3481.JPG)
-![DSCF3482](DSCF3482.JPG)
+![Portemonnaie zu](DSCF3479.JPG)
+![Portemonnaie offen](DSCF3480.JPG)
+![Knopf](DSCF3481.JPG)
+![Portemonnaie hinten](DSCF3482.JPG)
 
 ein Portemonnaie für Discoabende, (ich wusste, dass meine Eulenknöpfe mal einer würdigen Aufgabe zugeführt werden)
 
 
-![DSCF3483](DSCF3483.JPG)
-![DSCF3484](DSCF3484.JPG)
-![DSCF3485](DSCF3485.JPG)
-![DSCF3487](DSCF3487.JPG)
+![Regenbogentasche vorne](DSCF3483.JPG)
+![Regenbogentasche Reißverschluss](DSCF3484.JPG)
+![Regenbogentasche hinten](DSCF3485.JPG)
+![Regenbogentasche Muster](DSCF3487.JPG)
 
 eine Regenbogentasche, die einfach nur eine Regenbogentasche sein soll und keine Statementtasche. ;)
 
 
-An dieser Stelle will ich auch noch die Handpuppe würdigen, die ich leider aufgrund des vorzeitigen Aufbruchs der Filzerin nicht mehr abgelichtet habe, als Vorlage diente uns meine [Susette](http://flauschiversum.de/2015/07/filzen-filzen-filzen/) mit der persönlichen Abwandlung zu einer Drachenhandpuppe. Entstanden ist sie aus einer Mischung von Nass- und Trockenfilzen, ich würde mich sehr über ein Foto freuen, sollte ich noch eins zugeschickt bekommen, werde ich es anfügen.
+An dieser Stelle will ich auch noch die Handpuppe würdigen, die ich leider aufgrund des vorzeitigen Aufbruchs der Filzerin nicht mehr abgelichtet habe, als Vorlage diente uns meine [Susette](/2015/07/filzen-filzen-filzen/) mit der persönlichen Abwandlung zu einer Drachenhandpuppe. Entstanden ist sie aus einer Mischung von Nass- und Trockenfilzen. In Heimarbeit ist sogar noch eine Geschwisterpuppe entstanden.
+![Handpuppen](Svenjas Handpuppen.jpg)
 

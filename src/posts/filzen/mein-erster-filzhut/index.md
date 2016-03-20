@@ -7,11 +7,11 @@ image: DSCF0503-e1423513550725.jpg
 excerpt: "Also ich habe mich vorher noch nie an das Filzen herangetraut, und dann kam es über mich: zu viel freie Zeit und der Wille einen qualitativ hochwertigen Hexenhut zu haben, wie ich ihn mir immer vorgestellt habe... denkste..."
 ---
 
-![DSCF0503](DSCF0503-e1423513550725.jpg)
-![DSCF0504](DSCF0504-e1423513561706.jpg)
-![DSCF0505](DSCF0505-e1423513572622.jpg)
-![DSCF0506](DSCF0506-e1423513581270.jpg)
-![DSCF0507](DSCF0507-e1423513592532.jpg)
+![Hut vorne](DSCF0503-e1423513550725.jpg)
+![Hut rechts](DSCF0504-e1423513561706.jpg)
+![Hut vorne unten](DSCF0505-e1423513572622.jpg)
+![Hut links](DSCF0506-e1423513581270.jpg)
+![Hut hinten](DSCF0507-e1423513592532.jpg)
 
 Also ich habe mich vorher noch nie an das Filzen herangetraut, und dann kam es über mich: zu viel freie Zeit und der Wille einen qualitativ hochwertigen Hexenhut zu haben, wie ich ihn mir immer vorgestellt habe.
 Da ich über Umwege zum LARPen gekommen bin wusste ich, sollte der Hut was werden, was ich für einen Charakter erschaffen wollte - eine junge, leicht wollhysterische, verschrobene Hexe. 

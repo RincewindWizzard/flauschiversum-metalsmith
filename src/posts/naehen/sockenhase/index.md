@@ -7,9 +7,9 @@ image: DSCF1854.jpg
 excerpt: "Diese liebenswerte Hasendame hat seit gestern nicht nur einen Platz in meiner Einzelne-Socken-Kiste geräumt, sondern auch einen in meinem Herzen erobert."
 ---
 
-![DSCF1851](DSCF1851.jpg)
-![DSCF1853](DSCF1853.jpg)
-![DSCF1854](DSCF1854.jpg)
+![Hase liegend](DSCF1851.jpg)
+![Hase Rückseite](DSCF1853.jpg)
+![Hasendame Gesicht](DSCF1854.jpg)
 
 Diese liebenswerte Hasendame hat seit gestern nicht nur einen Platz in meiner Einzelne-Socken-Kiste geräumt, sondern auch einen in meinem Herzen erobert.
 

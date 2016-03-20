@@ -7,25 +7,25 @@ image: "DSCF2723.jpg"
 excerpt: "Nach langer Zeit hat die Ermeline mal wieder einen Hut gefilzt. "
 ---
 
-![DSCF2723](DSCF2723.jpg)
-![DSCF2724](DSCF2724.jpg)
-![DSCF2725](DSCF2725.jpg)
-![DSCF2726](DSCF2726.jpg)
+![Räuberhut links](DSCF2723.jpg)
+![Räuberhut vorne](DSCF2724.jpg)
+![Räuberhut rechts](DSCF2725.jpg)
+![Räuberhut hinten](DSCF2726.jpg)
 
-Nach langer Zeit hat die Ermeline mal wieder einen Hut gefilzt. Für diesen Räuberhut konnte ich die [Spitzhutvorlage](http://flauschiversum.de/2014/07/ermelines-neuer-hexenhut-2/ "Ermelines neuer Hexenhut") von den Zauberhüten nehmen und musste dafür einfach nur die Spitze umklappen. Wenn du das auch so machen möchtest, dann achte darauf, dass du den Hut noch nicht zu stark gewalkt hast an der Spitze, damit du eine schöne runde Form bilden kannst, denn du wirst von der geraden Kante der Vorlage Ecken an der Hutspitze haben.
+Nach langer Zeit hat die Ermeline mal wieder einen Hut gefilzt. Für diesen Räuberhut konnte ich die [Spitzhutvorlage](/2014/07/ermelines-neuer-hexenhut-2/"Ermelines neuer Hexenhut") von den Zauberhüten nehmen und musste dafür einfach nur die Spitze umklappen. Wenn du das auch so machen möchtest, dann achte darauf, dass du den Hut noch nicht zu stark gewalkt hast an der Spitze, damit du eine schöne runde Form bilden kannst, denn du wirst von der geraden Kante der Vorlage Ecken an der Hutspitze haben.
 
 
-![DSCF2717](DSCF2717.jpg)
-![DSCF2718](DSCF2718.jpg)
-![DSCF2729](DSCF2729.jpg)
-![DSCF2730](DSCF2730.jpg)
+![Räuberhut oben links](DSCF2717.jpg)
+![Räuberhut oben rechts](DSCF2718.jpg)
+![Räuberhut oben 1](DSCF2729.jpg)
+![Räuberhut oben 2](DSCF2730.jpg)
 
 Mein Zipfel hätte fast noch kürzer sein können, ich habe die Überlänge mittels eines Zwirbels versteckt. Das Praktische ist ja bei Wolle, wenn sie trocknet, behält sie die Form.
 
 
-![DSCF2720](DSCF2720.jpg)
-![DSCF2727](DSCF2727.jpg)
-![DSCF2728](DSCF2728.jpg)
-![DSCF2731](DSCF2731.jpg)
+![Detail Federn](DSCF2720.jpg)
+![links](DSCF2727.jpg)
+![vorne](DSCF2728.jpg)
+![Federn](DSCF2731.jpg)
 
-Hier noch ein paar Fotoeindrücke. Das Hutband ist aus Leder und wurde zunächst nur mit einer Schnalle und einem eingebrannten Rand versehen. Da kommt aber eventuell noch mehr ;) zwei Federn und der Holzknopf runden das ganze ab und zugleich wird die hochgeklappte Krempe an Ort und Stelle gehalten. Jetzt ist der Räuberhauptmann auch gut behütet.
+Hier noch ein paar Fotoeindrücke. Das Hutband ist aus Leder und wurde zunächst nur mit einer Schnalle und einem eingebrannten Rand versehen. Da kommt aber eventuell noch mehr ;) zwei Federn und der Holzknopf runden das Ganze ab und zugleich wird die hochgeklappte Krempe an Ort und Stelle gehalten. Jetzt ist der Räuberhauptmann auch gut behütet.
