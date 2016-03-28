@@ -19,6 +19,7 @@
     "metalsmith-markdown": "^0.2.1",
     "mkdirp": "^0.5.1",
     "moment": "^2.12.0",
+    "rss": "^1.2.1",
     "slug": "^0.9.1"
   }
 }
