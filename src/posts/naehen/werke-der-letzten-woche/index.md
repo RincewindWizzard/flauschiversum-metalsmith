@@ -11,7 +11,7 @@ Ich hatte die letzte Woche den Drang etwas zu nähen. Auf ein Großprojekt hab i
 
 # Kühlpacktaschen
 
-![Monster Herzchen Kühlpacktasche](DSCF4092.JPG)
+![Monster Herzchen Kühlpacktasche](DSCF4094.JPG)
 ![Monster lila Blümchen Kühlpacktasche](DSCF4093.JPG)
 ![Raben Kühlpacktasche](DSCF4095.JPG)
 ![Raben Kühlpacktasche hinten](DSCF4096.JPG)
@@ -29,7 +29,7 @@ Ich hatte die letzte Woche den Drang etwas zu nähen. Auf ein Großprojekt hab i
 ![Erdbeeren 3](DSCF4130.JPG)
 
 # Stulpen
-![Stulpen](DSCF40131.JPG)
+![Stulpen](DSCF4131.JPG)
 
 # Experiment
 ![Sticken mit der Nähmaschine](DSCF4132.JPG)
