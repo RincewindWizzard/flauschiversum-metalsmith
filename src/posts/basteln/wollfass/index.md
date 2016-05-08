@@ -4,12 +4,12 @@ category: basteln
 author: Ermeline
 date: 2016-04-03 20:50:11
 image: "DSCF4144.JPG"
-excerpt: "Andere haben einfach nur Wolle oder \"ein Glas voll Dreck"\, ich habe ein Fass voller Wolle."
+excerpt: "Andere haben einfach nur Wolle oder \"ein Glas voll Dreck\", ich habe ein Fass voller Wolle."
 ---
 
 ![Wollfass schräg oben geschlossen](DSCF4144.JPG)
 
-Andere haben einfach nur Wolle oder "ein Glas voll Dreck", ich habe ein Fass voller Wolle. Dieses Ungetüm hat bei meinem Umzug schon für Entsetzen gesorgt. Dieses Werk ist mal wieder eines mit freundlicher Unterstützung von Papa Wollknoll. Die Idee entstammte einer Galileo-Folge, in der es um das Upcyclen grö?eren Schrotts ging. 
+Andere haben einfach nur Wolle oder "ein Glas voll Dreck", ich habe ein Fass voller Wolle. Dieses Ungetüm hat bei meinem Umzug schon für Entsetzen gesorgt. Dieses Werk ist mal wieder eines mit freundlicher Unterstützung von Papa Wollknoll. Die Idee entstammte einer Galileo-Folge, in der es um das Upcyclen größeren Schrotts ging. 
 Zunächst besorge man sich also ein altes ausgewaschenes Ölfass für 10€ und hole die Flex hervor.
 
 Als erstes haben wir uns der Tür angenommen und das hat auf dem Hinterhof für mächtiges Getöse gesogt... nichts anderes waren unsere damaligen Nachbarn gewohnt. Als die Tür fertig ausgeflext und die Kanten entgratet waren, habe ich mich um den neuen Anstrich gekümmert. 
@@ -17,7 +17,7 @@ Als erstes haben wir uns der Tür angenommen und das hat auf dem Hinterhof für 
 ![Wollfass geschlossen frontal](DSCF4145.JPG)
 ![Wollfass von oben](DSCF4151.JPG)
 
-Da das alte zerkratze blau rot mich nicht so gepackt hat, entschied ich mich für roten Hammerschlaglack an der Innenseite und für schwarzen an der Außenseite. 
+Da das alte zerkratze blau-rote Farbgemisch mich nicht so gepackt hat, entschied ich mich für roten Hammerschlaglack an der Innenseite und für schwarzen an der Außenseite. 
 Die Tür und die Fasskante wurde mit einem Kantenschutzprofil versehen, mit zwei Scharnieren wieder verbunden und der alte Absperrhahn-Handgriff aus dem Labor auf dem Hinterhof sorgt dafür, dass ich die Tür auch benutzen kann. 
 
 ![Scharniere](DSCF4150.JPG)

@@ -12,7 +12,7 @@ block append header
       a(href='/autoren.html#' + author.toLowerCase()).author= author
     .center
       small Schreibe Ihr eine 
-        a.mailto(href='mailto:ermeline@flauschiversum.de') Antwort
+        a.mailto(href='mailto:ermeline@flauschiversum.de?subject=' + encodeURIComponent('[Flauschiversum] ' + title)) Antwort
         | !
 
 block content
