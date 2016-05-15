@@ -3,7 +3,7 @@ title: "Spindel abwickeln"
 category: wolle
 author: Ermeline
 date: 2016-05-15 16:58:09
-image: ""
+image: "DSCF2867.JPG"
 excerpt: "Wenn man Wolle gesponnen hat, kommt das Verzwirnen, aber wie bekommt man die Wolle von der Spindel?"
 ---
 

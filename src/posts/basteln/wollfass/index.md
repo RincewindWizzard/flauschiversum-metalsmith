@@ -4,7 +4,7 @@ category: basteln
 author: Ermeline
 date: 2016-04-03 20:50:11
 image: "DSCF4144.JPG"
-excerpt: "Andere haben einfach nur Wolle oder \"ein Glas voll Dreck"\, ich habe ein Fass voller Wolle."
+excerpt: "Andere haben einfach nur Wolle oder ein Glas voll Dreck, ich habe ein Fass voller Wolle."
 ---
 
 ![Wollfass schräg oben geschlossen](DSCF4144.JPG)
