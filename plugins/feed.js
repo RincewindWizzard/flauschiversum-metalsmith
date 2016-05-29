@@ -29,12 +29,17 @@ module.exports = function() {
         var category = path[1]
         // only the article is interesting, keep images untouched
         if(path[3] == "index.md") {
+          files[file].src = file
           posts.push(files[file])
         }
       }
     }
     posts.sort((a,b) => b.date - a.date)
     posts.forEach((post, i) => {
+      if(!post.title) {
+        console.log("[WARNING] Post hat keinen Titel")
+	throw "title undefined!"
+      }
       feed.item({
         title:  post.title,
         description: post.description,
