@@ -9,17 +9,17 @@ excerpt: "Ein weiteres Mal widme ich mich mit einem Projekt der Grinsekatze aus 
 
 Ein weiteres Mal widme ich mich mit einem Projekt der Grinsekatze aus Alice im Wunderland. Wie auch schon bei meinem [Grinsekatzenbild](/2015/05/grinsekatze-deluxe/) und diversen [Zeichnungen](/2015/08/ein-blick-in-mein-sketchbook/) handelt es sich auch hier um meinen eigenen Entwurf. Da meine [Bender-Tasche](/2014/01/taschen-aufhubschen/) lange genug getragen wurde, brauchte ich mal wieder was Frisches und was gibt es da Besseres als eine grinsende Katze? 
 
-![Grinsetasche vorne](DSCF4639.JPG) 
+![Grinsetasche vorne](DSCF4639.JPG)
 ![Grinsekatze](DSCF4654.JPG)
-![Grinsetasche vorne halboffen](DSCF4643.JPG) 
+![Grinsetasche vorne halboffen](DSCF4643.JPG)
 ![Grinsetasche vorne offen](DSCF4644.JPG)
 ![Grinsekatze hinten](DSCF4646.JPG)
 ![Grinsetasche Zitat 1](DSCF4645.JPG)
-![Grinsetasche Zitat 2](DSCF4647.JPG) 
-![Grinsetasche Zitat 3](DSCF4648.JPG) 
+![Grinsetasche Zitat 2](DSCF4647.JPG)
+![Grinsetasche Zitat 3](DSCF4648.JPG)
 ![Grinsetasche Zitat 4](DSCF4649.JPG)
-![Grinsetasche Zitat 5](DSCF4650.JPG) 
-![Grinsetasche Zitat 6](DSCF4651.JPG) 
+![Grinsetasche Zitat 5](DSCF4650.JPG)
+![Grinsetasche Zitat 6](DSCF4651.JPG)
 ![Grinsetasche Zitat 7](DSCF4653.JPG)
 
 Ich wählte einige Zitate um auch die Rückseite mit grinsendem Charme füllen zu können.
