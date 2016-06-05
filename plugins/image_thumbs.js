@@ -66,7 +66,7 @@ module.exports = function(dbg) {
         }
       }
     }
-    async.parallelLimit(batch, 10, done)
+    async.parallelLimit(batch, 1, done)
    
   };
 }
