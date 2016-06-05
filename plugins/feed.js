@@ -43,11 +43,7 @@ module.exports = function() {
       feed.item({
         title:  post.title,
         description: post.description,
-        url: 'https://flauschiversum.de/' + 
-          moment(post.date).format('YYYY/MM/') + 
-          slugify(
-            post.title.replace(/&/g, '')
-          ).replace(/\./g, '') + '/',
+        url: 'https://flauschiversum.de/' + moment(post.date).format('YYYY/MM/') + slugify(post.title.replace(/&/g, '')).replace(/\./g, '') + '/',
         categories: [post.category],
         author: post.author,
         date: post.date
