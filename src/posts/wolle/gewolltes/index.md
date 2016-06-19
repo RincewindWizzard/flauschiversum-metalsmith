@@ -3,7 +3,7 @@ title: "Gewolltes"
 category: wolle
 author: Ermeline
 date: 2016-06-19 16:11:47
-image: ""
+image: "IMG_4421.JPG"
 excerpt: "Da ich heute meine Zeit (tatsächlich zum Verkaufen!!!) auf dem Flohmarkt verbracht habe, gibt es heute mal kein aktuelles fertiges Projekt."
 ---
 
