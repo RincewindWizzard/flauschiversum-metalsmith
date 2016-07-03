@@ -1,10 +1,10 @@
 ---
-title: "Never ending Story: Wolle und Katzen"
+title: "Never ending Story Wolle und Katzen"
 category: wolle
 author: Ermeline
-date: 2015-12-13 15:11:47
-image: ""
-excerpt: ""
+date: 2016-07-03 15:11:47
+image: "DSCF4871.JPG"
+excerpt: "In letzter Zeit haben sich viele verschiedene Projekte zum Thema Wolle bei mir angesammelt."
 ---
 
 In letzter Zeit haben sich viele verschiedene Projekte zum Thema Wolle bei mir angesammelt. Die Ergebnisse könnten verschiedener nicht sein und doch haben sie alle eines gemeinsam: die scheinbar unvermeidbare Beziehung zwischen Katzen und Wolle.
@@ -51,7 +51,7 @@ Jetzt ist die Wolle auf der Haspel und darf sich erst mal nen Tag ausruhen.
 Wenn du dich jetzt fragst, wo hier die Katze bleibt, auf den nächsten Bildern wirst du den Grund sehen, weshalb mir beim Spinnen nicht nur fast der Geduldsfaden gerissen ist.
 ![spielt mit Knäul](DSCF4857.JPG)
 ![stört beim Verzwirnen](DSCF4858.JPG)
-![knabbert am Faden](DSCF4862 (Kopie).JPG)
+![knabbert am Faden](DSCF48622.JPG)
 
 ## Spinnrad
 Apropos Spinnen, ich habe letzte Woche ein Spinnrad erstanden, ein Louét S10. Nachdem ich mich um eine Grundreinigung gekümmert, das Holz eingeölt und das Pedal repariert habe, konnte ich es mir nicht nehmen lassen das Spinnrad mit einem Brandzeichen zu versehen. Also auch von der Kategorie [Brandings](/brandings/) ist hier heute was vertreten. Ich fand die Idee einfach zu lustig, dass während meines Spinnens ein Katze das Wollknäul jagt. Wenn man mein oben stehendes Spinn-Projekt betrachtet, bin ich froh, dass diese Katze nur aufgebrannt ist.
