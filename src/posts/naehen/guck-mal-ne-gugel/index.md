@@ -112,9 +112,11 @@ Zum Schließen habe ich mir etwas besonderes ausgedacht, funktionieren soll es w
 Flauschiversumschild einnähen und fertig.
 ![Flauschiversumschild](DSCF5221.JPG)
 
-6.Anziehen und freuen *check*
+# 6.Anziehen und freuen *check*
 Nach 12 Stunden habe ich eine Gugel wie ich sie mir vorgestellt habe. 
 ![Fertig](DSCF5219.JPG)
 ![Fertig](DSCF5220.JPG)
 ![Fertig](DSCF5228.JPG)
 ![Fertig](DSCF5229.JPG)
+
+
