@@ -9,12 +9,12 @@ excerpt: "Seit Freitag habe ich nun Ferien und was sich zuvor noch als Ferienrei
 
 Seit Freitag habe ich nun Ferien und was sich zuvor noch als Ferienreife und Kreatives-Loch bezeichnen ließ, ist nun wie weggeblasen. 
 
-# 1.Inspiration finden *check*
+## 1.Inspiration finden &#42;check&#42;
 So gammelte ich noch am Freitag als Einstieg in die Ferien vor Netflix und schaute mir Marco Polo an, als mir eine Weste die Inspiration für meine Gugel schenkte. 
 
 (Für alle die sich jetzt fragen: 'was zum Donnerwetter ist eine Gugel?'; du hast nun verschiedene Möglichkeiten es herauszufinden, entweder googelst du 'Gugel' oder du schaust dir mein Endergebnis an oder du lässt dich mit der schlichten Umschreibung 'eine Art Umhang/Schulterüberwurf' abspeisen.) Im August ist zudem noch die Conquest of Mythodea und dafür kann ich eine hübsche Gugel gut gebrauchen. Ich hatte vor einiger Zeit (vielmehr vor Jahren) auf dem Flohmarkt gegerbte Kaninchenfelle für 1€ das Stück erstanden. Da ich auf einem erst kürzlich vergangenen Flohmarkt den perfekten Wollstoff für mein Projekt gekauft hatte war eigentlich alles vorhanden. Ich wollte eine Kurzgugel, sie sollte nicht über die Schultern hängen aber eine schöne Kapuze haben. Nach ein wenig Internetrecherche, beschloss ich mir mein Schnittmuster selbst zu erstellen. Ich habe mein Vorgehen mal wieder ganauestens dokumentiert, es folgt also eine Anleitung zum Gugelnähen.
 
-# 2.Skizze anfertigen *check*
+## 2.Skizze anfertigen &#42;check&#42;
 ![Skizze Gugel vorne](DSCF5225.JPG)
 ![Skizze Gugel hinten](DSCF5227.JPG)
 ![Skizze Fellbesatz](DSCF5226.JPG)
@@ -22,7 +22,7 @@ Wenn ich noch etwas mehr Stoff finde und sich herausstellt, dass ich eine Erweit
 ![Dreiteiler vorne](DSCF5100.JPG)
 ![Dreiteiler hinten](DSCF5101.JPG)
 
-# 3.Schnittmuster erarbeiten *check* 
+## 3.Schnittmuster erarbeiten &#42;check&#42;
 Zunächst auf dem Papier; ich brauche nur 3 Teile davon ist eines das Cape und die anderen Beiden bilden die Seitenteile der Kapuze.
 ![Papierschnitt Cape](DSCF5103.JPG)
 ![Papierschnitt Kapuze](DSCF5104.JPG)
@@ -41,7 +41,7 @@ Begonnen habe ich mit einem Kreis von ca. 20cm Durchmesser (15cm reichen vollkom
 Bei meinem ersten Probestück, hat sich herausgestellt, dass ich etwas zu großzügig mit dem Halsauschnitt war und dass auf diese Weise der Stoff über die Schultern fällt. Trotzdem war mein Muster fürs erste ok und ich wusste was ich beim endgültigen Übertragen ändern musste.
 ![Zusammenstecken erste Anprobe](DSCF5123.JPG)
 
-# 4.Übertragen und Zuschneiden *check*
+## 4.Übertragen und Zuschneiden &#42;check&#42;
 So jetzt das Ganze nochmal in ordentlich und ohne Rumgekritzel übertragen und daran denken, das Halsloch kleiner zu machen. Der weiße Biberflanell wird mein Innenfutter. Kleiner Tipp, arbeitet auf einer glatten Oberfläche und nehmt den Stoff doppelt, so spart ihr euch eine Menge Arbeit, streicht die Stoffe gut glatt und steckt sie zusammen, dann könnt ihr auch direkt in einem Rutsch mehrere Teile schneiden, auf diese Weise konnte ich mir das doppelte Ausschneiden der Kapuze sparen und auch das Cape ist symmetrisch und kann gefaltet werden.
 ![Kapuzenzuschnitt innen](DSCF5124.JPG)
 ![Kapuze außen](DSCF5130.JPG)
@@ -62,7 +62,7 @@ Das Kaninchenfell musste auch noch in Streifen geschnitten werden, hier musste i
 ![Fellchen schneiden](DSCF5173.JPG)
 ![Strichrichtung beachten](DSCF5177.JPG)
 
-# 5.Losnähen *check*
+## 5.Losnähen &#42;check&#42;
 Die Kapuzen müssen nun einzeln zusammengenäht werden um dann an der Naht vereint zu werden.
 ![Kapuze innen nähen](DSCF5126.JPG)
 ![fertige Kapuzen](DSCF5145.JPG)
@@ -112,7 +112,7 @@ Zum Schließen habe ich mir etwas besonderes ausgedacht, funktionieren soll es w
 Flauschiversumschild einnähen und fertig.
 ![Flauschiversumschild](DSCF5221.JPG)
 
-6.Anziehen und freuen *check*
+6.Anziehen und freuen &#42;check&#42;
 Nach 12 Stunden habe ich eine Gugel wie ich sie mir vorgestellt habe. 
 ![Fertig](DSCF5219.JPG)
 ![Fertig](DSCF5220.JPG)
