@@ -13,7 +13,7 @@ Einiges wurde hier gewuselt in der letzten Woche. Es geht aufs ConQuest zu und i
 ![Laaaangweilig](DSCF5262.JPG)
 
 # Zaunwimpel
-Unser Lager wird auf dem ConQuest eingezäunt und dafür habe ich unseren Schriftzug 'Bewahrer des Gleichgewichts'auf Wimpel gemalt, damit auch jeder weiß wer wir sind und dafür musste jeder einzelne Wimpel natürlich auch noch genäht werden. Ich fragte mich beim Nähen, wer zum Donnerwetter auf die Idee gekommen ist, einen Namen zu wählen, der 25 Buchstaben hat und dann fragte ich mich, warum ich so bescheuert bin und das auch noch nähe. Naja hoffentlich belohnt die Optik für die Arbeit. Ich glaube ich mache mir auf Con den Spaß, blöde Anagramme zu bilden und die Buchstaben ein wenig umzusortieren.
+Unser Lager wird auf dem ConQuest eingezäunt und dafür habe ich unseren Schriftzug 'Bewahrer des Gleichgewichts' auf Wimpel gemalt, damit auch jeder weiß wer wir sind. Dafür musste jeder einzelne Wimpel natürlich auch noch genäht werden. Ich fragte mich beim Nähen, wer zum Donnerwetter auf die Idee gekommen ist, einen Namen zu wählen, der 25 Buchstaben hat und dann fragte ich mich, warum ich so bescheuert bin und das auch noch nähe. Naja hoffentlich belohnt die Optik für die Arbeit. Ich glaube ich mache mir auf Con den Spaß, blöde Anagramme zu bilden und die Buchstaben ein wenig umzusortieren.
 ![50 mal zuschneiden](DSCF4753.JPG)
 ![50 mal vorzeichen](DSCF4757.JPG)
 ![25 Buchstaben malen](DSCF4758.JPG)
@@ -26,7 +26,7 @@ Unser Lager wird auf dem ConQuest eingezäunt und dafür habe ich unseren Schrif
 ![25 fertige Wimpel](DSCF5279.JPG)
 
 # Armschiene
-Mein neuer Charakter wird sich viel mit Schreiben befassen, die Idee für die Armschiene kam mir, weil ich noch eine alte Variante gefunden hab, an der ich meine ersten Brandings gewagt habe. Diese Armschiene ist jedoch punziert, was bedeutet, dass die Struktur der Feder in das Leder eingedrückt wurde. Mit Lederfarbe habe ich dieFedernoch von der Schiene abgesetzt. Sie wird beim Schreiben zur Stabilisierung des Handgelenkes getragen und soll Fragen bezüglich meines Handwerkes beantworten. 
+Mein neuer Charakter wird sich viel mit Schreiben befassen, die Idee für die Armschiene kam mir, weil ich noch eine alte Variante gefunden hab, an der ich meine ersten Brandings gewagt habe. Diese Armschiene ist jedoch punziert, was bedeutet, dass die Struktur der Feder in das Leder eingedrückt wurde. Mit Lederfarbe habe ich die Feder noch von der Schiene abgesetzt. Sie wird beim Schreiben zur Stabilisierung des Handgelenkes getragen und soll Fragen bezüglich meines Handwerkes beantworten. 
 ![Armschiene oben innen](DSCF5230.JPG)
 ![Armschiene Federspitze](DSCF5235.JPG)
 ![Armschiene oben außen](DSCF5234.JPG)
