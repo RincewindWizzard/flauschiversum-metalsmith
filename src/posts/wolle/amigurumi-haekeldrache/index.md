@@ -25,14 +25,20 @@ LM=Luftmasche
 1. 2LM, in die 1.LM 6fM 
 2. M verd. =12M 
 3. Jede 2.M verd.=18M 
-4.-7. 18fM 
+4. 18fM 
+5. 18fM 
+6. 18fM 
+7. 18fM 
 8. Die ersten 5M verd., fM in restl. M =23M 
 9. 23fM 
 10. Jede 2. M innerh. der ersten 10M verd. =27M (über der vorhergehenden Zunahme in Reihe8) 
-11.-13. 27fM 
+11. 27fM 
+12. 27fM 
+13. 27fM 
 14. 2M zus., 5fM, wiederh. =23M 
 15. 2M zus., 3fM, wiederh. =18M, mit Watte füllen 
-16.-17. 2M zus., 1fM, wiederh., KM+ Faden durchz. =8M
+16. 2M zus., 1fM, wiederh., KM+ Faden durchz. =12M
+17. 2M zus., 1fM, wiederh., KM+ Faden durchz. =8M
 
 
 ![Körper](DSCF1360.jpg)
@@ -43,7 +49,10 @@ LM=Luftmasche
 3. Jede 2.M verd. =12M 
 4. 12fM
 5. Jede 2.M verd.=18M 
-6.-9. 18fM 
+6. 18fM 
+7. 18fM 
+8. 18fM 
+9. 18fM 
 10. Jede 3.M verd. =24M 
 11. 24fM 
 12. Jede 4.M verd. =30M 
@@ -51,7 +60,12 @@ LM=Luftmasche
 14. Jede 5.M verd. =36M 
 15. 36fM 
 16. Jede 6.M verd. =42M 
-17.-22. 42fM 
+17. 42fM 
+18. 42fM 
+19. 42fM 
+20. 42fM 
+21. 42fM 
+22. 42fM 
 23. 2M zus., 5fM, wiederh. =36M 
 24. 36fM 
 25. 2M zus., 4fM, wiederh. =30M 
@@ -92,7 +106,9 @@ wiederh. bis 42fM, KM+ Faden durchz.
 3. Jede 3.M verd. =8M
 4. Jede 4.M verd. =10M
 5. Jede 5.M verd. =12M
-6.-8. 12fM, KM+ Faden durchz.
+6. 12fM, KM+ Faden durchz.
+7. 12fM, KM+ Faden durchz.
+8. 12fM, KM+ Faden durchz.
 Ohren unten zusammenraffen und vernähen
 
 
@@ -102,7 +118,16 @@ Ohren unten zusammenraffen und vernähen
 1. 2LM, in die 1.LM 4fM
 2. M verd. =8M
 3. Jede 2.M verd. =12M
-4.-13. 12fM,
+4. 12fM,
+5. 12fM,
+6. 12fM,
+7. 12fM,
+8. 12fM,
+9. 12fM,
+10. 12fM,
+11. 12fM,
+12. 12fM,
+13. 12fM,
 14. KM+ Faden durchz.
 
 
@@ -113,7 +138,11 @@ Ohren unten zusammenraffen und vernähen
 2. M ver. =12M
 3  12fM
 4. Jede 3.M verd. =16M
-5.-9. 16fM
+5. 16fM
+6. 16fM
+7. 16fM
+8. 16fM
+9. 16fM
 10. Jede 3.M zus. =12M
 11. 12fM, KM+ Faden durchz.
 
@@ -123,7 +152,7 @@ Ohren unten zusammenraffen und vernähen
 ## Flügel 2x
 Stege: 21LM, 15fM, 11LM, 10fM, 11LM, 10fM
 
-Die Flügelmembranen sind improvisiert und sehen jedes Mal anders aus.ich habe schon überlegt beim nächsten mal ein Spitzenmuster von einem Häkeldeckchen zu nehmen.
+Die Flügelmembranen sind improvisiert und sehen jedes Mal anders aus. Ich habe schon überlegt beim nächsten mal ein Spitzenmuster von einem Häkeldeckchen zu nehmen.
 
 
 ## Stachelkamm
