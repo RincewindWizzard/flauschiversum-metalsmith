@@ -1,9 +1,0 @@
-div.slideshow
-  ul.rslides
-    each image in images
-      li(id=image.id)
-        .center
-          .tooltip
-            h3= image.alt
-        a(href=image.full_src)
-          img(src=image.src, alt=image.alt)

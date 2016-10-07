@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+# -*- coding: utf-8 -*-
 import sys, os, io, logging
 from datetime import datetime
 from threading import RLock, Thread
@@ -6,14 +8,14 @@ import frontmatter
 from markdown_slideshow import compile as markdown
 from slugify import slugify
 
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, render_template, send_from_directory
 app = Flask(__name__)
 
 # --------------------
 # Configuration
 posts_path = 'src/posts/'
-static_path = 'src/static/'
-static_images_path = 'src/static/images/'
+static_path = 'static/'
+static_images_path = 'static/images/'
 index_file = 'index.md'
 
 # --------------------
@@ -39,6 +41,11 @@ class Post(object):
     self.date = None
     self.slug = None
     self.reload()
+
+  @property
+  def datestring(self):
+    months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+    return '{}. {} {}'.format(self.date.day, months[self.date.month - 1], self.date.year)
 
   @property
   def path(self):
@@ -80,6 +87,7 @@ class Post(object):
     if not self.title: self.title = self.path
     self.author = tryget(doc, 'author', '"{}" hat keinen Autor!'.format(self.title))
     self.image = tryget(doc, 'image', '"{}" hat kein Thumbnail!'.format(self.title))
+    self.thumb = os.path.join(self.url, resized_image(self.image, 200)) if self.image else None
     self.excerpt = tryget(doc, 'excerpt', '"{}" hat keine Kurzfassung!'.format(self.title))
 
     self.category = tryget(doc, 'category')
@@ -93,6 +101,19 @@ class Post(object):
       self.images.append((self.title, self.image))
 
     self.check_images()
+
+
+def resized_image(url, width=None, height=None):
+  """ Creates an url to a resized version of the image which is not bigger than width x height """
+  dirname = os.path.dirname(url)
+  basename = os.path.basename(url)
+  if width and height:
+    return os.path.join(dirname, '{}x{}'.format(width, height), basename)
+  elif width:
+    return os.path.join(dirname, '{}x'.format(width), basename)
+  elif height:
+    return os.path.join(dirname, 'x{}'.format(height), basename)
+  else: return url
 
 # In Memory database
 dbLock = RLock()
@@ -128,24 +149,11 @@ def categories():
 #---------------------------
 
 
-@app.route('/')
-def hello_world():
-  with dbLock:
-    html = ['<ul>']
-    for category in categories():
-      html.append('<li>')
-      html.append(category)
-      html.append('<ul>')
-      for post in posts_by_date(category):
-        html.append('<li>')
-        html.append('<a href="{}">{}</a>'.format(post.url, post.title))
-        html.append('</li>')
-      html.append('</ul>')
-      html.append('</li>')
 
-    #titles.append(post.title)
-    html.append('</ul>')
-    return ''.join(html)
+@app.route('/')
+def index():
+  with dbLock:
+    return render_template('index.html', posts=list(reversed(posts_by_date())), currentyear=datetime.now().year, currentPage=0)
 
 
 @app.route('/<int:year>/<int:month>/<title>/')
@@ -171,6 +179,10 @@ def convert_thumbnail(year, month, title, width, height, image):
                    attachment_filename=image,
                    mimetype='image/png')
 
+@app.route('/<path>/<basename>')
+@app.route('/<basename>', defaults={'path': ''})
+def static_files(path, basename):
+  return send_from_directory(os.path.join('static', path), basename)
 
 
 if __name__ == '__main__':

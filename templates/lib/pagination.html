@@ -1,0 +1,19 @@
+{% set paginationSize = 6 %}
+{% set anchor = '#index' %}
+
+<div class="center">
+  <ul class="pagination">{% if  currentPage - 1 >= 0 %}
+    <!--li-->
+    <!--  a(href=pages[0].url + anchor) ««-->
+    <li><a{{__pyjade_attrs(attrs=[('href',(pages[currentPage - 1].url))])}} + anchor="+ anchor">«</a>
+    </li>{% endif %}{% for page,pageNum in __pyjade_iter(pages,2) %}{% if  Math.abs(pageNum - currentPage) < paginationSize / 2 || (currentPage < paginationSize / 2 && pageNum < paginationSize) %}{% if  pageNum == currentPage %}
+    <li><a{{__pyjade_attrs(attrs=[('href',(page.url))])}} + anchor="+ anchor" class="active">{{parseInt(pageNum) + 1|escape}}</a>
+    </li>{% else %}
+    <li><a{{__pyjade_attrs(attrs=[('href',(page.url))])}} + anchor="+ anchor">{{parseInt(pageNum) + 1|escape}}</a>
+    </li>{% endif %}{% endif %}{% endfor %}{% if  Object.keys(pages).length > currentPage + 1 %}
+    <li><a{{__pyjade_attrs(attrs=[('href',(pages[currentPage + 1].url))])}} + anchor="+ anchor">»</a>
+    </li>
+    <!--li-->
+    <!--  a(href=pages[Object.keys(pages).length - 1].url + anchor) »»-->{% endif %}
+  </ul>
+</div>
