@@ -1,5 +1,7 @@
+#! /usr/bin/python3
+# -*- coding: utf-8 -*-
 import unittest
-from flauschiversum import database, Post
+from database import database, Post
 
 class TestPosts(unittest.TestCase):
   def setUp(self):
