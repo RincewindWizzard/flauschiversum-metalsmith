@@ -3,7 +3,7 @@ title: "Leseratte Büchereule Bücherwurm"
 category: malen
 author: Ermeline
 date: 2016-10-16 20:09:53
-image: ""
+image: "Bücherwürmer_Farbe_0001.jpg"
 excerpt: "Gelegentlich küsst mich dann die Muse über Umwege."
 ---
 
