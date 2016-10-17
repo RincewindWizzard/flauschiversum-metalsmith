@@ -7,6 +7,7 @@ from markdown.treeprocessors import Treeprocessor
 from markdown.util import etree
 
 from slugify import slugify
+import settings
 
 def resized_image(url, width=None, height=None):
   """ Creates an url to a resized version of the image which is not bigger than width x height """
@@ -31,7 +32,14 @@ class Slideshow(Treeprocessor, Extension):
     # resize images
     for image in doc.findall('.//img'):
       self.md.images.append((image.get('alt'), image.get('src')))
-      image.set('src', resized_image(image.get('src'), width=700, height=500))
+      image.set(
+        'src', 
+        resized_image(
+          image.get('src'), 
+          width=settings.image_dimension[0], 
+          height=settings.image_dimension[1]
+        )
+      )
 
   def foo(self, doc):
     delta = 1

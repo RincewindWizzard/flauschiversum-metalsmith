@@ -2,39 +2,39 @@
 {% block header %}
   {{ super() }}
   <div class="category-images">
-    {% if  (not category and currentPage == 0) or category == 'basteln' %}
+    {% if  (not category and pagenum == 0) or category == 'basteln' %}
       <a href="/basteln/">
         <h2>Basteln</h2>
         <img src="/images/Basteln.jpg" class="category"/>
         <p>Mit Klebe und Schere bestückt,<br/> wird mit Liebe geschmückt.</p>
       </a>
     {% endif %}
-    {% if  (not category and currentPage == 0) or category == 'brandings' %}
+    {% if  (not category and pagenum == 0) or category == 'brandings' %}
       <a href="/brandings/">
         <h2>Brandings</h2><img src="/images/Brandings.jpg" class="category"/>
         <p>Die Haut zu dick? Das ist egal,<br/> bebrannt wird auch das Holzregal.</p>
       </a>
     {% endif %}
-    {% if  (not category and currentPage == 0) or category == 'filzen' %}
+    {% if  (not category and pagenum == 0) or category == 'filzen' %}
       <a href="/filzen/">
         <h2>Filzen</h2>
         <img src="/images/Filzen.jpg" class="category"/>
         <p>Wasser, Seife, Wolle,<br/> reibe nicht zu dolle.</p>
       </a>
     {% endif %}
-    {% if  (not category and currentPage == 0) or category == 'malen' %}
+    {% if  (not category and pagenum == 0) or category == 'malen' %}
       <a href="/malen/">
         <h2>Malen</h2><img src="/images/Malen.jpg" class="category"/>
         <p>Pinselstrich und Mine, geben mir die Muße,<br/> dem ersten Zug, ein Neuer folgt zum Gruße.</p>
       </a>
     {% endif %}
-    {% if  (not category and currentPage == 0) or category == 'nahen' %}
+    {% if  (not category and pagenum == 0) or category == 'nahen' %}
       <a href="/nahen/">
         <h2>Nähen</h2><img src="/images/Naehen.jpg" class="category"/>
         <p>Mit Nadel und Faden in den Krieg,<br/> erreichen kannst du nur den Sieg.</p>
       </a>
     {% endif %}
-    {% if  (not category and currentPage == 0) or category == 'wolle' %}
+    {% if  (not category and pagenum == 0) or category == 'wolle' %}
       <a href="/wolle/">
         <h2>Wolle</h2><img src="/images/Wolle.jpg" class="category"/>
         <p>Spinne, häkel, webe, sticke,<br/> knüpfe dir nur keine Stricke.</p>
@@ -45,7 +45,7 @@
 
 {% block content %}
   <main id="index">
-    {#{% include "./lib/pagination.html" %}#}
+    {% include "./lib/pagination.html" %}
     {% for post in posts %}
       <div class="center">
         <article>
@@ -69,6 +69,6 @@
         </article>
       </div>
     {% endfor %}
-    {#{% include "./lib/pagination.html" %}#}
+    {% include "./lib/pagination.html" %}
   </main>
 {% endblock %}

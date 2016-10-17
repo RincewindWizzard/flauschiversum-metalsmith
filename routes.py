@@ -3,7 +3,7 @@
 import subprocess, os, io
 from datetime import datetime
 from PIL import Image
-from flask import Flask, Response, request, send_file, render_template, send_from_directory
+from flask import Flask, Response, request, send_file, render_template, send_from_directory, abort
 app = Flask(__name__)
 
 import htmlmin
@@ -22,23 +22,39 @@ def postprocess(html):
   else:
     return html
 
-@app.route('/', defaults={'category': None})
-@app.route('/basteln/',   defaults={'category': 'basteln'})
-@app.route('/brandings/', defaults={'category': 'brandings'})
-@app.route('/filzen/',    defaults={'category': 'filzen'})
-@app.route('/malen/',     defaults={'category': 'malen'})
-@app.route('/nähen/',     defaults={'category': 'nahen'})
-@app.route('/naehen/',    defaults={'category': 'nahen'})
-@app.route('/nahen/',     defaults={'category': 'nahen'})
-@app.route('/wolle/',     defaults={'category': 'wolle'})
-def index(category):
+@app.route('/', defaults={'category': None, 'page': 0})
+@app.route('/page/<int:page>/index.html', defaults={'category': None})
+@app.route('/basteln/',   defaults={'category': 'basteln', 'page': 0})
+@app.route('/brandings/', defaults={'category': 'brandings', 'page': 0})
+@app.route('/filzen/',    defaults={'category': 'filzen', 'page': 0})
+@app.route('/malen/',     defaults={'category': 'malen', 'page': 0})
+@app.route('/nähen/',     defaults={'category': 'nahen', 'page': 0})
+@app.route('/naehen/',    defaults={'category': 'nahen', 'page': 0})
+@app.route('/nahen/',     defaults={'category': 'nahen', 'page': 0})
+@app.route('/wolle/',     defaults={'category': 'wolle', 'page': 0})
+@app.route('/<category>/page/<int:page>/index.html')
+def index(category, page):
   with dbLock:
+    posts = list(reversed(db.posts_by_date(category)))
+    page_urls = [ 
+      os.path.join('/', category if category else '', 'page', str(pagenum), 'index.html#index')
+      for pagenum in range(0, len(posts)//settings.posts_per_page)
+    ]
+    page_urls[0] = '/' + category if category else '/'
+
+    # pagination
+    start = max(0, page - settings.pagination_size//2)
+    end = min(len(page_urls), start + settings.pagination_size)
+
     html = render_template(
       'index.html', 
-      posts=list(reversed(db.posts_by_date(category))),
+      posts=posts[page * settings.posts_per_page:page * settings.posts_per_page + settings.posts_per_page],
       category=category,
-      currentyear=datetime.now().year, 
-      currentPage=0
+      currentyear=datetime.now().year,
+      pagenum=page,
+      page_urls=page_urls,
+      pagination=list(range(start, end)),
+      last_page=len(page_urls)-1
     )
     return postprocess(html)
 
@@ -46,6 +62,7 @@ def index(category):
 def render_post(year, month, title):
   with dbLock:
     post = database['post_by_url'][request.path]
+    post.reload()
     return postprocess(
       render_template('post.html', post=post, title=post.title)
     )
@@ -56,18 +73,22 @@ def render_post(year, month, title):
 @app.route('/<int:year>/<int:month>/<title>/x<int:height>/<image>', defaults={'width': 1000})
 def convert_thumbnail(year, month, title, width, height, image):
   post = database['post_by_url']['/{}/{:02d}/{}/'.format(year, month, title)]
-  img = Image.open(os.path.join(post.path, image))
-  overlay = Image.open(os.path.join(settings.static_images_path, 'Flauschiversum_overlay.png'))
-  overlay.thumbnail(img.size, Image.ANTIALIAS)
+  imgpath = os.path.join(post.path, image)
+  if os.path.isfile(imgpath):
+    img = Image.open(imgpath)
+    overlay = Image.open(os.path.join(settings.static_images_path, 'Flauschiversum_overlay.png'))
+    overlay.thumbnail(img.size, Image.ANTIALIAS)
 
-  img.paste(overlay, (img.size[0] - overlay.size[0], img.size[1] - overlay.size[1]), overlay)
+    img.paste(overlay, (img.size[0] - overlay.size[0], img.size[1] - overlay.size[1]), overlay)
 
-  img.thumbnail((width, height), Image.ANTIALIAS)
-  f = io.BytesIO()
-  img.save(f, format= 'JPEG')
-  return send_file(io.BytesIO(f.getvalue()),
-                   attachment_filename=image,
-                   mimetype='image/png')
+    img.thumbnail((width, height), Image.ANTIALIAS)
+    f = io.BytesIO()
+    img.save(f, format= 'JPEG')
+    return send_file(io.BytesIO(f.getvalue()),
+                     attachment_filename=image,
+                     mimetype='image/png')
+  else:
+    abort(404)
 
 @app.route('/<path>/<basename>')
 @app.route('/<basename>', defaults={'path': ''})
@@ -82,5 +103,9 @@ def style():
     mimetype='text/css'
   )
 
-
+@app.route('/impressum.html')
+def impressum():
+  return postprocess(
+      render_template('impressum.html')
+    )
 

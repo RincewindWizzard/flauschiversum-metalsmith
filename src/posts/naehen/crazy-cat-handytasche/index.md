@@ -8,6 +8,7 @@ excerpt: "Tomcat und ich waren einkaufen."
 ---
 
 ![Crazy Cat Stoff](DSCF4669.JPG)
+
 Tomcat und ich waren einkaufen. Ich konnte diesen Stoff einfach nicht liegenlassen, er brachte uns derart zum Schmunzeln, dass ich die 9,50€ in einen halben Meter investierte.
 
 Mein erster Gedanke war, dass man eine Handyhülle nähen könnte, da die Motive die perfekte Größe hatten. Ich habe aber kein Handy für das es sich lohnen würde eine solche Tasche zu nähen, also soll Tomcat für sein Handy eine Hülle bekommen. Ich setzte mich noch am selben Tag an das Projekt, die Maße des Handys wurden mir schnell zugetragen. Mit diesen Maßen baute ich mir dann einen Handydummy.
@@ -30,7 +31,7 @@ Anhand der Ziernähte konnte ich auch abschätzen wo ich die Seiten zusammennäh
 
 Die Außenhülle legte ich erst einmal zur Seite und widmete mich dann dem Innenfutter. Ich hatte noch ein vom Schneiden im Laden halbiertes Katzenbild, dieses möchte ich als kleinen Gag Innen im Futter haben. Also auch hier erst einmal die Stoffe zusmmenführen und das Innenfutter nähen.
 ![Feststecken](DSCF4673.JPG)
-![Festnähen](DSCF4647.JPG)
+![Festnähen](DSCF4674.JPG)
 ![Umgebügelt](DSCF4679.JPG)
 ![Zusammenlegen](DSCF4686.JPG)
 ![Festnähen](DSCF4687.JPG)
