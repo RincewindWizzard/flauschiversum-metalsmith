@@ -1,6 +1,9 @@
 {% extends "./layout.html" %}
 {% block header %}
   {{ super() }}
+  <div class="center">
+    <a href="/autoren.html">Autorenseite</a>
+  </div>
   <div class="category-images">
     {% if  (not category and pagenum == 0) or category == 'basteln' %}
       <a href="/basteln/">

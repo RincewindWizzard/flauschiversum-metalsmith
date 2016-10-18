@@ -106,6 +106,12 @@ def style():
 @app.route('/impressum.html')
 def impressum():
   return postprocess(
-      render_template('impressum.html')
-    )
+    render_template('impressum.html')
+  )
+
+@app.route('/autoren.html')
+def autoren():
+  return postprocess(
+    render_template('autoren.html')
+  )
 
