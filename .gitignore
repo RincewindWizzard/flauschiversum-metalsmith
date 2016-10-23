@@ -1,5 +1,7 @@
 build/*
+log/*
 node_modules/*
 .cache
 upload
 *.pyc
+*.swp

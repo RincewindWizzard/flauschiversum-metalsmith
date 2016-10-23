@@ -1,8 +1,8 @@
 run:
-	export FLASK_APP=flauschiversum.py; flask run
+	python3 flauschiversum.py
 debug:
 	export FLASK_DEBUG=1; export FLASK_APP=flauschiversum.py; flask run
 build:
-	rm -r build; mkdir build; cd build; wget -m http://localhost:5000/
+	mkdir build log; cd build; wget -mnH -nv -o ../log/err.log http://localhost:5000/
 clean:
-	rm -rf build
+	rm -rf build log
