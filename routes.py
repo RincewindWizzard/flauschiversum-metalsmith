@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
-import subprocess, os, io
+import subprocess, os, io, logging
 from datetime import datetime
 from PIL import Image
 from flask import Flask, Response, request, send_file, render_template, send_from_directory, abort
@@ -36,11 +36,11 @@ def postprocess(html):
 def index(category, page):
   with dbLock:
     posts = list(reversed(db.posts_by_date(category)))
-    page_urls = [ 
+    page_urls = ['/' + category if category else '/'] + [ 
       os.path.join('/', category if category else '', 'page', str(pagenum), 'index.html#index')
-      for pagenum in range(0, len(posts)//settings.posts_per_page)
+      for pagenum in range(1, min(len(posts)//settings.posts_per_page, 1))
     ]
-    page_urls[0] = '/' + category if category else '/'
+
 
     # pagination
     start = max(0, page - settings.pagination_size//2)
@@ -61,11 +61,16 @@ def index(category, page):
 @app.route('/<int:year>/<int:month>/<title>/')
 def render_post(year, month, title):
   with dbLock:
-    post = database['post_by_url'][request.path]
-    post.reload()
-    return postprocess(
-      render_template('post.html', post=post, title=post.title)
-    )
+    if request.path in database['post_by_url']:
+      post = database['post_by_url'][request.path]
+      post.reload()
+      #response.headers["Content-Disposition"] = "attachment; filename=books.csv"
+      return postprocess(
+        render_template('post.html', post=post, title=post.title)
+      )
+    else:
+      logging.error("{} not found!".format(request.path))
+      return abort(404)
     
 
 @app.route('/<int:year>/<int:month>/<title>/<int:width>x<int:height>/<image>')
@@ -76,12 +81,13 @@ def convert_thumbnail(year, month, title, width, height, image):
   imgpath = os.path.join(post.path, image)
   if os.path.isfile(imgpath):
     img = Image.open(imgpath)
-    overlay = Image.open(os.path.join(settings.static_images_path, 'Flauschiversum_overlay.png'))
+
+    overlay = Image.open(settings.overlay)
     overlay.thumbnail(img.size, Image.ANTIALIAS)
 
     img.paste(overlay, (img.size[0] - overlay.size[0], img.size[1] - overlay.size[1]), overlay)
-
     img.thumbnail((width, height), Image.ANTIALIAS)
+
     f = io.BytesIO()
     img.save(f, format= 'JPEG')
     return send_file(io.BytesIO(f.getvalue()),
