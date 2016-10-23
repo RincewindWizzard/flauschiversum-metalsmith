@@ -38,7 +38,7 @@ def index(category, page):
     posts = list(reversed(db.posts_by_date(category)))
     page_urls = ['/' + category if category else '/'] + [ 
       os.path.join('/', category if category else '', 'page', str(pagenum), 'index.html#index')
-      for pagenum in range(1, min(len(posts)//settings.posts_per_page, 1))
+      for pagenum in range(1, max(len(posts)//settings.posts_per_page, 1))
     ]
 
 

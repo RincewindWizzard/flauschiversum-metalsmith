@@ -5,3 +5,4 @@ node_modules/*
 upload
 *.pyc
 *.swp
+ftp_upload.sh
