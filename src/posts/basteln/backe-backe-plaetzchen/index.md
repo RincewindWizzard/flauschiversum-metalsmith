@@ -1,9 +1,9 @@
 ---
-title: "backe backe Kuchen"
+title: "backe backe Plätzchen"
 category: basteln
 author: Ermeline Lucy
 date: 2016-11-27 16:16:47
-image: ""
+image: "IMG_20161127_113221.jpg"
 excerpt: "Von Mürbeteig über Schmandherzen bis Kokosmakronen, dieses Jahr haben wir insgesamt 7 verschiedene Keksrezepte ausprobiert."
 ---
 
@@ -51,7 +51,7 @@ Beim kneten ist der Teig sehr bröselig, wenn man ihn später aussticht, muss ma
 - Marmelade oder Gelee
 - Alles vermengen und für 2 Sdt in den Kühlschrank, bei 160 Grad backen, später 2 Kekse ausstechen und mit dem Gelee verkleben.
 ![Schmandherzenteig](IMG_20161126_184743.jpg)
-![Schmandherzen in Sternform](IMG_20161126_113537.jpg)
+![Schmandherzen in Sternform](IMG_20161127_113537.jpg)
 
 # Möhren-Mandel-Makronen
 - 2 Eier
@@ -98,8 +98,8 @@ Sind sehr knusprig und schmecken sehr nussig.
 ![Eigelbmakronen unten in der Kistenecke](IMG_20161126_200822.jpg)
 
 Wenn man dann alles durch 2 teilt ist es schon nicht mer ganz so viel. Aber trotzdem eine schöne Auswahl für diese Weihnachtszeit zum Naschen. Außerdem habe ich noch ganz viele selbstgemachte Schokocrossies. :D 
-![Plätzchen](IMG_20161127_200822.jpg)
-![Plätzchen](IMG_20161127_200817.jpg)
+![Plätzchen](IMG_20161126_200822.jpg)
+![Plätzchen](IMG_20161126_200817.jpg)
 
 Einen schönen ersten Advent wünschen Ermeline und Lucy.
 
