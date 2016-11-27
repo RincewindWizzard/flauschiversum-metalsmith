@@ -3,7 +3,7 @@ title: "Edlothia"
 category: wolle
 author: Ermeline
 date: 2016-11-06 19:39:18
-image: "Nah.jpg"
+image: "nah.jpg"
 excerpt: "Jetzt wo es kälter ist, kann endlich wieder gestrickt und gehäkelt werden."
 ---
 
