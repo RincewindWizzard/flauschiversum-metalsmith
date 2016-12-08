@@ -6,3 +6,4 @@ upload
 *.pyc
 *.swp
 ftp_upload.sh
+*~
