@@ -9,16 +9,19 @@
     </columns>
     <data>
       <row>
-        <col id="0" translatable="yes"/>
+        <col id="0" translatable="yes">Ermeline</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Ermeline</col>
+        <col id="0" translatable="yes">Ehrlich</col>
       </row>
       <row>
         <col id="0" translatable="yes">Lucy</col>
       </row>
       <row>
         <col id="0" translatable="yes">Tomcat</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes"> </col>
       </row>
     </data>
   </object>
@@ -55,6 +58,9 @@
         <col id="1" translatable="yes">brandings</col>
       </row>
     </data>
+  </object>
+  <object class="GtkTextBuffer" id="description_buffer">
+    <property name="text" translatable="yes">Ein kurzer Ausschnitt, der den Beitrag beschreibt.</property>
   </object>
   <object class="GtkFileFilter" id="imagefiles">
     <mime-types>
@@ -197,6 +203,7 @@ veröffentliche einen neuen Beitrag im Flauschiversum!</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="model">authors</property>
+                        <property name="active">0</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext2"/>
                           <attributes>
@@ -290,6 +297,7 @@ veröffentliche einen neuen Beitrag im Flauschiversum!</property>
                 <property name="can_focus">True</property>
                 <property name="hexpand">True</property>
                 <property name="vexpand">True</property>
+                <property name="buffer">description_buffer</property>
               </object>
             </child>
           </object>

@@ -2,9 +2,14 @@
 # -*- coding: utf-8 -*-
 import logging, configparser, os
 from os.path import expanduser
+from slugify import slugify
 
 # Configuration
 posts_path = 'src/posts/'
+
+def post_path(title, category):
+  return os.path.join(posts_path, category, slugify(title)) 
+
 static_path = 'static/'
 static_images_path = 'static/images/'
 overlay = os.path.join(static_images_path, 'Wasserzeichen.png')
@@ -13,6 +18,8 @@ pretty_xml = 'pretty' # 'pretty', 'minimize', None
 pagination_size = 5
 posts_per_page = 5
 image_dimension = (800, 600)
+date_fmt = '%Y-%m-%d'
+file_opener = 'xdg-open'    # program to use for file opening
 
 
 config = configparser.ConfigParser()

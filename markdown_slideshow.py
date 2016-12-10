@@ -78,6 +78,7 @@ class Slideshow(Treeprocessor, Extension):
 
 
 md = Markdown(extensions=[Slideshow()])
+md.images = []
 
 def compile(text):
   return md.convert(text), md.images

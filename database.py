@@ -13,6 +13,7 @@ from markdown_slideshow import compile as markdown
 
 # own libraries
 import settings
+from PIL import Image
 from markdown_slideshow import resized_image
 
 def tryget(doc, key, msg=None):
@@ -75,10 +76,10 @@ class Post(object):
     if self.url in database['post_by_url']:
       del database['post_by_url'][self.url]
 
-    index_path = os.path.join(self.path, settings.index_file)
-    doc = frontmatter.load(index_path)
+    self.index_path = os.path.join(self.path, settings.index_file)
+    doc = frontmatter.load(self.index_path)
 
-    self.title = tryget(doc, 'title', '"{}" hat keinen Titel!'.format(index_path))
+    self.title = tryget(doc, 'title', '"{}" hat keinen Titel!'.format(self.index_path))
     self.slug = tryget(doc, 'slug')
     if not self.slug:
       self.slug = slugify(self.title)
@@ -136,3 +137,30 @@ def categories():
     cats.add(post.category)
   return cats
 
+
+
+def create_new_post(title, category, author, publish_date, description, thumb_src):
+  """ 
+  * Creates a new Post in the src directory
+  * Raises FileExistsError if post already exists
+  """
+  post_path = os.path.join(settings.posts_path, category, slugify(title))
+  os.mkdir(post_path)
+  thumb_dst = os.path.join(os.getcwd(), post_path, slugify(title) + '_thumb.jpg')
+  thumb = Image.open(thumb_src)
+  thumb.thumbnail(settings.image_dimension, Image.ANTIALIAS)
+  thumb.save(thumb_dst, format= 'JPEG')
+
+
+  with open(os.path.join(post_path, settings.index_file), 'w') as f:
+    f.write("""---
+title: "{}"
+category: {}
+author: {}
+date: {}
+image: "{}"
+excerpt: "{}"
+---
+
+""".format(title, category, author, datetime.strftime(publish_date, settings.date_fmt), os.path.basename(thumb_dst), description))
+  return Post(post_path)
