@@ -6,10 +6,13 @@ from gi.repository import Gtk, GdkPixbuf
 from datetime import datetime, date
 import os, subprocess
 
-import settings
-import database
+import settings, database, asset_resizer
 
-
+def open_file(path):
+  """
+  * Opens a file with the standard tool.
+  """
+  subprocess.call([settings.file_opener, path])
 
 class PublishAssistant(object):
   def __init__(self):
@@ -54,16 +57,17 @@ class PublishAssistant(object):
     index = combo.get_active_iter()
     return combo.get_model()[index][0]
 
-  def onDaySelected(self, *foo):
-    print(self.post_date)
-
-  def onExit(self, *args):
+  def on_exit(self, *args):
     Gtk.main_quit()
 
-  def onCancel(self, *args):
-    self.onExit()
+  def on_cancel(self, *args):
+    self.on_exit()
 
-  def onApply(self, assistant):
+
+  def on_apply(self, assistant):
+    """
+    * Create the new Post and open a text editor
+    """
     try:
       post = database.create_new_post(
         self.post_title, 
@@ -73,13 +77,50 @@ class PublishAssistant(object):
         self.post_description,
         self.post_image
       )
-      subprocess.call([settings.file_opener, post.index_path])
+      open_file(post.index_path)
+      open_file(post.path)
+      asset_resizer.start_watch_thread(post.path)
     except FileExistsError as e:
-      print("Post already exists!")
+      self.on_error(e, "Post already exists!")
 
+  def buildlog(self, level, message, path=None):
+    """
+    * Log an error in the debug log area.
+    * level (string) indicates the severity of the error
+    * path points to the file where the error occured
+    """
+    error_list = self.builder.get_object("error_list")
+    error_list.append([level, message, path])
 
+  def on_error(self, error, msg):
+    """
+    * Display an Error dialog if something nasty happens.
+    """
+    dialog = Gtk.MessageDialog(
+      self.builder.get_object('create_post_assistant'), 
+      0, 
+      Gtk.MessageType.ERROR,
+      Gtk.ButtonsType.CANCEL,
+      error.args[0]
+    )
+    dialog.format_secondary_text(msg)
+    dialog.run()
+    dialog.destroy()
 
-  def post_image_choosen(self, file_chooser):
+  def on_error_clicked(self, error_list_view, treepath, column):
+    """
+    * Opens the file, where a compile error occured.
+    """
+    model = error_list_view.get_model()
+     # column 2 is for file path of error
+    error_file = model.get_value(model.get_iter(treepath), 2)
+    open_file(error_file)
+
+  def post_image_chosen(self, file_chooser):
+    """
+    * If a post image has been chosen, it has to be resized and displayed
+    * If everything works well the current slide is completed
+    """
     self.post_image = file_chooser.get_filename()
     img_display = self.builder.get_object("post_image_display")
     pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(

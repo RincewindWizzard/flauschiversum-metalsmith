@@ -62,6 +62,16 @@
   <object class="GtkTextBuffer" id="description_buffer">
     <property name="text" translatable="yes">Ein kurzer Ausschnitt, der den Beitrag beschreibt.</property>
   </object>
+  <object class="GtkListStore" id="error_list">
+    <columns>
+      <!-- column-name level -->
+      <column type="gchararray"/>
+      <!-- column-name message -->
+      <column type="gchararray"/>
+      <!-- column-name path -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
   <object class="GtkFileFilter" id="imagefiles">
     <mime-types>
       <mime-type>image/*</mime-type>
@@ -74,10 +84,10 @@
     <property name="default_height">500</property>
     <property name="icon_name">applications-graphics</property>
     <property name="use_header_bar">0</property>
-    <signal name="apply" handler="onApply" swapped="no"/>
-    <signal name="cancel" handler="onCancel" swapped="no"/>
-    <signal name="close" handler="onExit" swapped="no"/>
-    <signal name="delete-event" handler="onExit" swapped="no"/>
+    <signal name="apply" handler="on_apply" swapped="no"/>
+    <signal name="cancel" handler="on_cancel" swapped="no"/>
+    <signal name="close" handler="on_exit" swapped="no"/>
+    <signal name="delete-event" handler="on_exit" swapped="no"/>
     <child>
       <object class="GtkLabel" id="label1">
         <property name="visible">True</property>
@@ -251,7 +261,6 @@ veröffentliche einen neuen Beitrag im Flauschiversum!</property>
             <property name="can_focus">True</property>
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
-            <signal name="day-selected-double-click" handler="onDaySelected" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -309,13 +318,10 @@ veröffentliche einen neuen Beitrag im Flauschiversum!</property>
         </child>
       </object>
       <packing>
-        <property name="title" translatable="yes">Ausschnitt</property>
+        <property name="title" translatable="yes">Beschreibung</property>
         <property name="complete">True</property>
         <property name="has_padding">False</property>
       </packing>
-    </child>
-    <child>
-      <placeholder/>
     </child>
     <child>
       <object class="GtkBox" id="image_page">
@@ -386,7 +392,7 @@ veröffentliche einen neuen Beitrag im Flauschiversum!</property>
                 <property name="halign">end</property>
                 <property name="filter">imagefiles</property>
                 <property name="title" translatable="yes">Bild auswählen</property>
-                <signal name="file-set" handler="post_image_choosen" swapped="no"/>
+                <signal name="file-set" handler="post_image_chosen" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -405,6 +411,92 @@ veröffentliche einen neuen Beitrag im Flauschiversum!</property>
       <packing>
         <property name="page_type">confirm</property>
         <property name="title" translatable="yes">Beitragsbild</property>
+        <property name="has_padding">False</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="debug_log_area">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="label6">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_left">5</property>
+            <property name="margin_right">5</property>
+            <property name="margin_top">5</property>
+            <property name="margin_bottom">5</property>
+            <property name="label" translatable="yes">Schreibe jetzt deinen Beitrag.
+Alle Bilder, die du hinzufügst, werden automatisch skaliert.
+Klicke auf weiter, um deinen Beitrag zu veröffentlichen.
+Unten siehst du alle Fehlermeldungen, die auftreten:</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow2">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTreeView" id="error_list_view">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">error_list</property>
+                <signal name="row-activated" handler="on_error_clicked" swapped="no"/>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection" id="treeview-selection1"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+                    <property name="title" translatable="yes">Level</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext3"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn2">
+                    <property name="title" translatable="yes">Datei</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext4"/>
+                      <attributes>
+                        <attribute name="text">2</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treeviewcolumn3">
+                    <property name="title" translatable="yes">Nachricht</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext5"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Testing</property>
         <property name="has_padding">False</property>
       </packing>
     </child>

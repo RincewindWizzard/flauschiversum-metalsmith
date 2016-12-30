@@ -46,7 +46,11 @@ class Post(object):
 
   @property
   def datestring(self):
-    months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+    months = [
+      'Januar', 'Februar', 'März', 'April',
+      'Mai', 'Juni', 'Juli', 'August',
+      'September', 'Oktober', 'November', 'Dezember'
+    ]
     return '{}. {} {}'.format(self.date.day, months[self.date.month - 1], self.date.year)
 
   @property
