@@ -31,3 +31,16 @@ if 'ftp' in config.sections():
 else:
   logging.error('Keine Zugangsdaten für den FTP Upload gefunden!')
 
+
+# Template for new posts
+post_header_template = """---
+title: "{}"
+category: {}
+author: {}
+date: {}
+image: "{}"
+excerpt: "{}"
+---
+
+"""
+

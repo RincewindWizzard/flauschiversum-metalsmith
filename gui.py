@@ -4,7 +4,7 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GdkPixbuf
 from datetime import datetime, date
-import os, subprocess
+import os, subprocess, logging
 
 import settings, database, asset_resizer
 
@@ -63,6 +63,16 @@ class PublishAssistant(object):
   def on_cancel(self, *args):
     self.on_exit()
 
+  def on_new_post_btn_clicked(self, btn):
+    """ User decided to create a new post """
+    logging.debug('new_post')
+    self.builder.get_object("create_post_assistant").set_current_page(1)
+    
+
+  def on_edit_posts_btn_clicked(self, btn):
+    """ User decided to edit old posts. """
+    logging.debug('edit_post')
+    self.builder.get_object("create_post_assistant").set_current_page(4)
 
   def on_apply(self, assistant):
     """
@@ -80,8 +90,19 @@ class PublishAssistant(object):
       open_file(post.index_path)
       open_file(post.path)
       asset_resizer.start_watch_thread(post.path)
+      self.reload_build_log()
     except FileExistsError as e:
       self.on_error(e, "Post already exists!")
+
+  def reload_build_log(self):
+    error_list = self.builder.get_object("error_list")
+    error_list.clear()
+
+    database.load_posts()
+    errors = database.get_errors()
+
+    for msg, post in errors:
+      error_list.append(['ERROR', msg, post.path])
 
   def buildlog(self, level, message, path=None):
     """
@@ -150,6 +171,7 @@ class PublishAssistant(object):
       )
 
 if __name__ == '__main__':
+  logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
   assistant = PublishAssistant()
   assistant.show()
   Gtk.main()

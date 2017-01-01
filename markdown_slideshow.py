@@ -81,5 +81,6 @@ md = Markdown(extensions=[Slideshow()])
 md.images = []
 
 def compile(text):
+  md.images = []
   return md.convert(text), md.images
 

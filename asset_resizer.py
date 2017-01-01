@@ -15,13 +15,18 @@ def resize_image(img_path):
     with open(timg, 'wb') as f:
       img.save(f, format= 'JPEG')
 
+    logging.info('Resizing ' + img_path)
+
     shutil.move(timg, os.path.splitext(img_path)[0] + '.jpg')
+    os.remove(img_path)
 
 
-def watch_path(path, done=None):
+def watch_path(paths, done=None):
   i = inotify.adapters.Inotify()
-  path = bytes(path, 'utf-8')
-  i.add_watch(path)
+  paths = [ bytes(path, 'utf-8') for path in paths ]
+
+  for path in paths:
+    i.add_watch(path)
 
   try:
     files_done = []
@@ -36,28 +41,40 @@ def watch_path(path, done=None):
           if 'IN_CLOSE_WRITE' in type_names or 'IN_CLOSE_NOWRITE' in type_names:
             path = os.path.join(watch_path.decode('utf-8'), filename.decode('utf-8'))
             filename = os.path.basename(path)
+            logging.debug('event on ' + path)
             prefix, suffix = os.path.splitext(filename)
-            
-            if not prefix in files_done and suffix.lower() in ['.jpg', '.png']:
-              files_done.append(prefix)
+            dst = os.path.splitext(path)[0] + '.jpg'
+
+            if not dst in files_done and suffix.lower() in ['.jpg', '.png']:
+              files_done.append(dst)
               resize_image(path)
       except Exception as e:
         logging.error(e)
         
   finally:
-    i.remove_watch(path)
+    for path in paths:
+      i.remove_watch(path)
 
 
-def convert_all(path, done=None):
+def convert_all(paths, done=None):
   """
   * Converts all images in given folder, that are bigger than settings.image_dimension
   """
-  for img in os.listdir(path):
-    prefix, suffix = os.path.splitext(img)
-    if suffix.lower() in ['.jpg', '.png']:
-      resize_image(os.path.join(path, img))
+  if type(paths) == str:
+    paths = [paths]
+  elif type(paths) == list:
+    ...
+  else:
+    raise ValueError('paths is wrong ' + path)
 
-  watch_path(path, done)
+  for path in paths:
+    for img in os.listdir(path):
+      prefix, suffix = os.path.splitext(img)
+      if suffix.lower() in ['.jpg', '.png']:
+        resize_image(os.path.join(path, img))
+
+  logging.info('Watching {} '.format(paths))
+  watch_path(paths, done)
 
 
 
@@ -89,13 +106,18 @@ def main():
     description = 'Resize every image in a folder to a given max size. ' + 
                   'Watch for new Images.'
   )
-  parser.add_argument('path', help='Path to the folder to be watched.')
-
+  parser.add_argument('paths', nargs='+', help='Path to the folder to be watched.')
   args = parser.parse_args()
+
+  paths = []
+  for path in args.paths:
+    paths.extend([ path for path, _, _ in os.walk(path) ])
+
   try:
-    convert_all(args.path)
+    convert_all(paths)
   except KeyboardInterrupt:
     ...
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
+  logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
   main()

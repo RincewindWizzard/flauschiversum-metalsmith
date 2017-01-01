@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #stdlib
-import logging, os
+import logging, os, copy
 from datetime import datetime
 from threading import RLock, Thread
 
@@ -16,13 +16,7 @@ import settings
 from PIL import Image
 from markdown_slideshow import resized_image
 
-def tryget(doc, key, msg=None):
-  """ Try getting a value from a dic and log if error """
-  if key in doc.keys():
-    return doc[key]
-  else:
-    if msg: logging.warning(msg)
-    return None
+
 
 
 
@@ -44,6 +38,19 @@ class Post(object):
     self.slug = None
     self.reload()
 
+  def tryget(self, doc, key, msg=None):
+    """ Try getting a value from a dic and log if error """
+    if key in doc.keys():
+      return doc[key]
+    else:
+      if msg: self.error(msg)
+      return None
+
+  def error(self, msg):
+    """ reports an error """
+    logging.error(msg)
+    database['errors'].append((msg, self))
+
   @property
   def datestring(self):
     months = [
@@ -63,9 +70,14 @@ class Post(object):
       try:
         src = os.path.join(self.path, src)
         if not os.path.isfile(src):
-          logging.error('Das Bild "{}" existiert nicht in {}'.format(alt, src))
+          self.error('Das Bild "{}" existiert nicht in {}'.format(alt, src))
       except TypeError as e:
-        logging.exception('Ein Fehler trat auf: os.path.join({}, {})'.format(os.path.dirname(self.path), src))
+        logging.exception(
+          'Ein Fehler trat auf: os.path.join({}, {})'.format(
+            os.path.dirname(self.path), 
+            src
+          )
+        )
 
 
   @property
@@ -80,23 +92,55 @@ class Post(object):
     if self.url in database['post_by_url']:
       del database['post_by_url'][self.url]
 
-    self.index_path = os.path.join(self.path, settings.index_file)
+    self.index_path = os.path.join(
+      self.path,
+      settings.index_file
+    )
     doc = frontmatter.load(self.index_path)
 
-    self.title = tryget(doc, 'title', '"{}" hat keinen Titel!'.format(self.index_path))
-    self.slug = tryget(doc, 'slug')
+    # title and slug
+    self.title = self.tryget(
+      doc,
+      'title',
+      '"{}" hat keinen Titel!'.format(self.index_path)
+    )
+
+    self.slug = self.tryget(doc, 'slug')
     if not self.slug:
       self.slug = slugify(self.title)
-    self.date = tryget(doc, 'date', '"{}" hat kein Veröffentlichungsdatum!'.format(self.title))
+    #---------------
+
+    self.date = self.tryget(
+      doc, 
+      'date', '"{}" hat kein Veröffentlichungsdatum!'.format(self.title)
+    )
     database['post_by_url'][self.url] = self
 
     if not self.title: self.title = self.path
-    self.author = tryget(doc, 'author', '"{}" hat keinen Autor!'.format(self.title))
-    self.image = tryget(doc, 'image', '"{}" hat kein Thumbnail!'.format(self.title))
-    self.thumb = os.path.join(self.url, resized_image(self.image, 200)) if self.image else None
-    self.excerpt = tryget(doc, 'excerpt', '"{}" hat keine Kurzfassung!'.format(self.title))
+    self.author = self.tryget(
+      doc,
+      'author',
+      '"{}" hat keinen Autor!'.format(self.title)
+    )
 
-    self.category = tryget(doc, 'category')
+    self.image = self.tryget(
+      doc,
+      'image',
+      '"{}" hat kein Thumbnail!'.format(self.title)
+    )
+
+    self.thumb = os.path.join(
+      self.url, 
+      resized_image(self.image, 200)
+    ) if self.image else None
+
+    self.excerpt = self.tryget(
+      doc,
+      'excerpt',
+      '"{}" hat keine Kurzfassung!'.format(self.title)
+    )
+
+    self.category = self.tryget(doc, 'category')
     if not self.category:
       self.category = os.path.split(os.path.dirname(self.path))[1]
     else:
@@ -104,6 +148,7 @@ class Post(object):
 
     self.content = doc.content
     self.html, self.images = markdown(self.content)
+
     # ensure Thumbnail is included in list
     if self.image:
       self.images.append((self.title, self.image))
@@ -115,14 +160,22 @@ class Post(object):
 dbLock = RLock()
 database = {
   'posts': {},
-  'post_by_url': {}
+  'post_by_url': {},
+  'errors' : []
 }
+
+def get_errors():
+  with dbLock:
+    return copy.copy(database['errors'])
 
 def load_posts():
   with dbLock:
     # flushing
     del database['posts']
+    del database['errors']
+
     database['posts'] = {}
+    database['errors'] = []
 
     for category_path in os.listdir(settings.posts_path):
       for post_path in os.listdir(os.path.join(settings.posts_path, category_path)):
@@ -157,14 +210,14 @@ def create_new_post(title, category, author, publish_date, description, thumb_sr
 
 
   with open(os.path.join(post_path, settings.index_file), 'w') as f:
-    f.write("""---
-title: "{}"
-category: {}
-author: {}
-date: {}
-image: "{}"
-excerpt: "{}"
----
-
-""".format(title, category, author, datetime.strftime(publish_date, settings.date_fmt), os.path.basename(thumb_dst), description))
+    f.write(
+      settings.post_header_template.format(
+        title,
+        category,
+        author,
+        datetime.strftime(publish_date, settings.date_fmt),
+        os.path.basename(thumb_dst),
+        description
+      )
+    )
   return Post(post_path)
