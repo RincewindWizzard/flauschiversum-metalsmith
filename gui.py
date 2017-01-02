@@ -1,12 +1,11 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
-import os, subprocess, logging, threading, types, re, multiprocessing, queue, copy
+import os, subprocess, logging, threading, types, re, multiprocessing, queue, copy, time
 from multiprocessing import Queue, Process
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GdkPixbuf, GLib
 import inotify.adapters
-from inotify.constants import IN_DELETE, IN_CREATE, IN_MODIFY, IN_CLOSE_WRITE
 from datetime import datetime, date
 import settings, database, source_watcher, flauschiversum
 
@@ -73,6 +72,8 @@ class PublishAssistant(object):
     self.builder.connect_signals(self)
     self.assistant = self.builder.get_object("create_post_assistant")
     self.post_image = None
+    self.dbreload_intervall = 1 # seconds
+    self._last_source_change = 0
 
     def dbload(*args, **kwargs):
       database.load_posts()
@@ -182,7 +183,9 @@ class PublishAssistant(object):
 
   def on_source_changed(self, filepath):
     logging.debug('source changed')
-    self.reload_build_log()
+    if time.time() - self._last_source_change > self.dbreload_intervall:
+      self.reload_build_log()
+      self._last_source_change = time.time()
 
   def on_database_read(self, errors):
     logging.debug("Databases reloaded!")

@@ -1,27 +1,29 @@
-import os, shutil, tempfile, sys, argparse, threading, logging, multiprocessing, queue
+import os, shutil, tempfile, sys, argparse, threading, logging, multiprocessing, queue, re
 from multiprocessing import Queue, Process
 import inotify.adapters
 from PIL import Image
+from inotify.constants import IN_DELETE, IN_CREATE, IN_MODIFY, IN_CLOSE_WRITE
 
 import settings
 
 def resize_image(img_path):
-  timg = tempfile.mktemp()
-  shutil.move(img_path, timg)
-  logging.debug('Resizing {}'.format(img_path))
+  #timg = tempfile.mktemp()
+  img = Image.open(img_path)
+  img.load()
+
+  #shutil.move(img_path, timg)
   prefix, suffix = os.path.splitext(img_path)
   dst_suffix = '.JPG' if suffix == '.JPG' else '.jpg'
   dst = prefix + dst_suffix
-
-  img = Image.open(img_path)
+  
   if img.size[0] > settings.image_dimension[0] or img.size[1] > settings.image_dimension[1]:
     img.thumbnail(settings.image_dimension, Image.ANTIALIAS)
-
+    logging.debug('Resizing {}'.format(img_path))
     with open(dst, 'wb') as f:
       img.save(f, format= 'JPEG')
 
-    logging.info('Resizing ' + img_path)
-    os.remove(timg)
+    if not img_path == dst:
+      os.remove(img_path)
 
 def convert_all(paths, done=None):
   """
@@ -31,9 +33,15 @@ def convert_all(paths, done=None):
     for img in os.listdir(path):
       prefix, suffix = os.path.splitext(img)
       if suffix.lower() in ['.jpg', '.png']:
-        resize_image(os.path.join(path, img))
-
-
+        try:
+          resize_image(os.path.join(path, img))
+        except FileNotFoundError as e:
+          ...
+        except Exception as e:
+          logging.exception(e)
+        except OSError as e:
+          logging.exception(e)
+ 
 
 def watcher_main(queue, stop):
   """
@@ -53,7 +61,6 @@ def watcher_main(queue, stop):
   image_files   = [ re.compile(s) for s in [r'.*\.png$', r'.*\.jpg$', r'.*\.JPG$'] ]
   watched_files = [ re.compile(s) for s in [r'.*\.png$', r'.*\.jpg$', r'.*\.JPG$', r'index\.md$'] ]
 
-  last_file = None
   for event in watch.event_gen():
     if stop.is_set(): break
     if event:
@@ -62,13 +69,19 @@ def watcher_main(queue, stop):
       filename = filename.decode('utf-8')
       filepath = os.path.join(watch_path, filename)
 
-      if not filepath == last_file:
-        if any([ r.match(filename) for r in watched_files ]):
-          queue.put(filepath)
-        if any([ r.match(filename) for r in image_files ]):
-          resize_image(filepath)
 
-      last_file = filepath
+      if any([ r.match(filename) for r in watched_files ]):
+        queue.put(filepath)
+      if any([ r.match(filename) for r in image_files ]):
+        try:
+          resize_image(filepath)
+        except FileNotFoundError as e:
+          ...
+        except Exception as e:
+          logging.exception(e)
+        except OSError as e:
+          logging.exception(e)
+
 
 def watch_sources(progress=None, stopped=None):
   """
