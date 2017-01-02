@@ -7,3 +7,5 @@ upload
 *.swp
 ftp_upload.sh
 *~
+__pycache__/*
+__pycache__
