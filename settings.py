@@ -20,7 +20,7 @@ posts_per_page = 5
 image_dimension = (800, 600)
 date_fmt = '%Y-%m-%d'
 file_opener = 'xdg-open'    # program to use for file opening
-
+localserver = 'http://localhost:5000/'
 
 config = configparser.ConfigParser()
 config.read(expanduser('~/.flauschiversum/auth.conf'))

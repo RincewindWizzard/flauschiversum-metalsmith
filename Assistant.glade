@@ -64,8 +64,10 @@
   </object>
   <object class="GtkListStore" id="error_list">
     <columns>
+      <!-- column-name level_icon -->
+      <column type="GdkPixbuf"/>
       <!-- column-name level -->
-      <column type="gchararray"/>
+      <column type="gint"/>
       <!-- column-name message -->
       <column type="gchararray"/>
       <!-- column-name path -->
@@ -100,6 +102,7 @@
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">Hallo Ermeline!
 Veröffentliche jetzt einen neuen Beitrag im Flauschiversum!</property>
+            <property name="justify">center</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -512,9 +515,9 @@ Unten siehst du alle Fehlermeldungen, die auftreten:</property>
                   <object class="GtkTreeViewColumn" id="treeviewcolumn1">
                     <property name="title" translatable="yes">Level</property>
                     <child>
-                      <object class="GtkCellRendererText" id="cellrenderertext3"/>
+                      <object class="GtkCellRendererPixbuf" id="cellrendererpixbuf1"/>
                       <attributes>
-                        <attribute name="text">0</attribute>
+                        <attribute name="pixbuf">0</attribute>
                       </attributes>
                     </child>
                   </object>
@@ -525,7 +528,7 @@ Unten siehst du alle Fehlermeldungen, die auftreten:</property>
                     <child>
                       <object class="GtkCellRendererText" id="cellrenderertext4"/>
                       <attributes>
-                        <attribute name="text">2</attribute>
+                        <attribute name="text">3</attribute>
                       </attributes>
                     </child>
                   </object>
@@ -536,7 +539,7 @@ Unten siehst du alle Fehlermeldungen, die auftreten:</property>
                     <child>
                       <object class="GtkCellRendererText" id="cellrenderertext5"/>
                       <attributes>
-                        <attribute name="text">1</attribute>
+                        <attribute name="text">2</attribute>
                       </attributes>
                     </child>
                   </object>

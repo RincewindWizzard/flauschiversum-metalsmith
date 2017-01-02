@@ -6,6 +6,7 @@ from routes import app
 import database as db
 
 def main():
+  logging.debug('Started Webserver.')
   db.load_posts()
   try:
     app.run(host="0.0.0.0")
@@ -28,5 +29,5 @@ def as_process():
   print("done")
 
 if __name__ == '__main__':
-  logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
+  logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.ERROR)
   main()

@@ -3,7 +3,7 @@
 
 #stdlib
 import logging, os, copy
-from datetime import datetime
+from datetime import datetime, date
 from threading import RLock, Thread
 
 # external libraries
@@ -43,13 +43,18 @@ class Post(object):
     if key in doc.keys():
       return doc[key]
     else:
-      if msg: self.error(msg)
+      if msg: self.warning(msg)
       return None
 
   def error(self, msg):
     """ reports an error """
     logging.error(msg)
-    database['errors'].append((msg, self))
+    database['errors'].append((logging.ERROR, msg, self))
+
+  def warning(self, msg):
+    """ reports an error """
+    logging.warning(msg)
+    database['errors'].append((logging.WARNING, msg, self))
 
   @property
   def datestring(self):
@@ -114,6 +119,9 @@ class Post(object):
       doc, 
       'date', '"{}" hat kein Veröffentlichungsdatum!'.format(self.title)
     )
+    if isinstance(self.date, datetime): 
+      self.date = self.date.date()
+    
     database['post_by_url'][self.url] = self
 
     if not self.title: self.title = self.path
@@ -180,6 +188,8 @@ def load_posts():
     for category_path in os.listdir(settings.posts_path):
       for post_path in os.listdir(os.path.join(settings.posts_path, category_path)):
         Post(os.path.join(settings.posts_path, category_path, post_path))
+
+  return database
 
 def posts_by_date(category=None):
   if category:
