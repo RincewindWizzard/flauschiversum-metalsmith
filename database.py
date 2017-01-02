@@ -36,6 +36,7 @@ class Post(object):
     self._path = path
     self.date = None
     self.slug = None
+    
     self.reload()
 
   def tryget(self, doc, key, msg=None):
@@ -93,75 +94,78 @@ class Post(object):
       return None
 
   def reload(self):
-    # the url might change
-    if self.url in database['post_by_url']:
-      del database['post_by_url'][self.url]
+    try:
+      # the url might change
+      if self.url in database['post_by_url']:
+        del database['post_by_url'][self.url]
 
-    self.index_path = os.path.join(
-      self.path,
-      settings.index_file
-    )
-    doc = frontmatter.load(self.index_path)
+      self.index_path = os.path.join(
+        self.path,
+        settings.index_file
+      )
+      doc = frontmatter.load(self.index_path)
 
-    # title and slug
-    self.title = self.tryget(
-      doc,
-      'title',
-      '"{}" hat keinen Titel!'.format(self.index_path)
-    )
+      # title and slug
+      self.title = self.tryget(
+        doc,
+        'title',
+        '"{}" hat keinen Titel!'.format(self.index_path)
+      )
 
-    self.slug = self.tryget(doc, 'slug')
-    if not self.slug:
-      self.slug = slugify(self.title)
-    #---------------
+      self.slug = self.tryget(doc, 'slug')
+      if not self.slug:
+        self.slug = slugify(self.title)
+      #---------------
 
-    self.date = self.tryget(
-      doc, 
-      'date', '"{}" hat kein Veröffentlichungsdatum!'.format(self.title)
-    )
-    if isinstance(self.date, datetime): 
-      self.date = self.date.date()
-    
-    database['post_by_url'][self.url] = self
+      self.date = self.tryget(
+        doc, 
+        'date', '"{}" hat kein Veröffentlichungsdatum!'.format(self.title)
+      )
+      if isinstance(self.date, datetime): 
+        self.date = self.date.date()
+      
+      database['post_by_url'][self.url] = self
 
-    if not self.title: self.title = self.path
-    self.author = self.tryget(
-      doc,
-      'author',
-      '"{}" hat keinen Autor!'.format(self.title)
-    )
+      if not self.title: self.title = self.path
+      self.author = self.tryget(
+        doc,
+        'author',
+        '"{}" hat keinen Autor!'.format(self.title)
+      )
 
-    self.image = self.tryget(
-      doc,
-      'image',
-      '"{}" hat kein Thumbnail!'.format(self.title)
-    )
+      self.image = self.tryget(
+        doc,
+        'image',
+        '"{}" hat kein Thumbnail!'.format(self.title)
+      )
 
-    self.thumb = os.path.join(
-      self.url, 
-      resized_image(self.image, 200)
-    ) if self.image else None
+      self.thumb = os.path.join(
+        self.url, 
+        resized_image(self.image, 200)
+      ) if self.image else None
 
-    self.excerpt = self.tryget(
-      doc,
-      'excerpt',
-      '"{}" hat keine Kurzfassung!'.format(self.title)
-    )
+      self.excerpt = self.tryget(
+        doc,
+        'excerpt',
+        '"{}" hat keine Kurzfassung!'.format(self.title)
+      )
 
-    self.category = self.tryget(doc, 'category')
-    if not self.category:
-      self.category = os.path.split(os.path.dirname(self.path))[1]
-    else:
-      self.category = slugify(self.category)
+      self.category = self.tryget(doc, 'category')
+      if not self.category:
+        self.category = os.path.split(os.path.dirname(self.path))[1]
+      else:
+        self.category = slugify(self.category)
 
-    self.content = doc.content
-    self.html, self.images = markdown(self.content)
+      self.content = doc.content
+      self.html, self.images = markdown(self.content)
 
-    # ensure Thumbnail is included in list
-    if self.image:
-      self.images.append((self.title, self.image))
+      # ensure Thumbnail is included in list
+      if self.image:
+        self.images.append((self.title, self.image))
 
-    self.check_images()
+      self.check_images()
+    except FileNotFoundError as e:
+      self.error(str(e))
 
 
 # In Memory database
@@ -196,7 +200,7 @@ def posts_by_date(category=None):
     posts = [post for post in database['posts'].values() if post.category == category]
   else:
     posts = database['posts'].values()
-  return sorted(posts, key=lambda x: x.date)
+  return sorted([ post for post in posts if post.date ], key=lambda x: x.date)
 
 def categories():
   cats = set()
