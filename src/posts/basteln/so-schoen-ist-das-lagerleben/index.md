@@ -40,6 +40,7 @@ Unsere Kuriositätenausstellung war ebenfalls durch LED beleuchtet, es waberte i
 ![Detail kurios 11](DSCF5348.JPG)
 ![Detail kurios 12](DSCF5349.JPG)
 ![Detail kurios 13](DSCF5350.JPG)
+![Detail kurios 14](DSCF5351.JPG) 
 
 Hier sind noch ein paar Detailaufnahmen vom Bett, dieses gehört zu einem weiteren Projekt welches ich mit meinem Papa verwirklicht habe.
 ![Bett bezogen](DSCF5336.JPG)

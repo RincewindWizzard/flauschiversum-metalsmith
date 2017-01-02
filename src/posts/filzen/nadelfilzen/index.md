@@ -21,6 +21,6 @@ Und trotz des ersten missglückten Versuches, habe ich mich beim zweiten Mal an 
 ![Grinsekatze rechts](DSCF5781.JPG)
 ![Grinsekatze halb rechts](DSCF5788.JPG)
 ![Grinsekatze hinten](DSCF5782.JPG)
-![Grinsekatze links](DSCF5783.JPG)
+![Grinsekatze links](DSCF57983.JPG)
 
 Einen schönen Sonntag, Eure Ermeline.
