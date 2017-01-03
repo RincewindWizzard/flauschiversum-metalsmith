@@ -169,7 +169,7 @@ Den großen Drachen habe ich auf Wunsch einer Freundin gehäkelt, er soll ein Ge
 ![Seite](IMG_20150612_085949.jpg)
 ![Profil](IMG_20150612_085956.jpg)
 ![Hinten](IMG_20150612_090012.jpg)
-![Seite hinten](IMG_20150612_090055.jpg)
+![Seite hinten](IMG_20150612_090018.jpg)
 ![Detail Schriftzug](IMG_20150612_085931.jpg)
 ![Detail Schriftzug 1](IMG_20150612_085936.jpg)
 ![Detail Schriftzug 2](IMG_20150612_085944.jpg)
