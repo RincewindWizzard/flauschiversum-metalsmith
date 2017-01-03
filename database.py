@@ -36,7 +36,12 @@ class Post(object):
     self._path = path
     self.date = None
     self.slug = None
-    
+    self.category = None
+    self.excerpt = None
+    self.image = None
+    self.content = None
+    self.html = None
+
     self.reload()
 
   def tryget(self, doc, key, msg=None):

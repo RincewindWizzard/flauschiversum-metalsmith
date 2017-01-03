@@ -559,6 +559,50 @@ Unten siehst du alle Fehlermeldungen, die auftreten:</property>
         <property name="has_padding">False</property>
       </packing>
     </child>
+    <child>
+      <object class="GtkBox" id="commit_area">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="label11">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Die Änderungen werden jetzt gespeichert und auf github.com geladen.
+Die NAS Server lädt demnächst die aktuelle Version auf flauschiversum.de.</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow3">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTextView" id="git_result_view">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="has_padding">False</property>
+      </packing>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="action_area">
       <object class="GtkBox" id="assistant-action_area">
         <property name="can_focus">False</property>

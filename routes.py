@@ -3,7 +3,7 @@
 import subprocess, os, io, logging
 from datetime import datetime
 from PIL import Image
-from flask import Flask, Response, request, send_file, render_template, send_from_directory, abort
+from flask import Flask, Response, request, send_file, render_template, send_from_directory, abort, after_this_request
 app = Flask(__name__)
 
 import htmlmin
@@ -56,7 +56,9 @@ def index(category, page):
       pagination=list(range(start, end)),
       last_page=len(page_urls)-1
     )
-    return postprocess(html)
+    response = Response(postprocess(html))
+    response.headers['Last-modified'] = datetime.now().strftime('%a, %d %m %Y %H:%M:%S GMT')
+    return response
 
 @app.route('/<int:year>/<int:month>/<title>/')
 def render_post(year, month, title):
@@ -65,9 +67,13 @@ def render_post(year, month, title):
       post = database['post_by_url'][request.path]
       post.reload()
       #response.headers["Content-Disposition"] = "attachment; filename=books.csv"
-      return postprocess(
-        render_template('post.html', post=post, title=post.title)
+      response = Response(
+        postprocess(
+          render_template('post.html', post=post, title=post.title)
+        )
       )
+      response.headers['Last-modified'] = datetime.now().strftime('%a, %d %m %Y %H:%M:%S GMT')
+      return response
     else:
       logging.error("{} not found!".format(request.path))
       return abort(404)
@@ -90,9 +96,18 @@ def convert_thumbnail(year, month, title, width, height, image):
 
     f = io.BytesIO()
     img.save(f, format= 'JPEG')
+
+
+    @after_this_request
+    def add_header(response):
+        response.headers['Last-modified'] = datetime.fromtimestamp(
+          os.path.getmtime(imgpath)
+        ).strftime('%a, %d %m %Y %H:%M:%S GMT')
+        return response
+
     return send_file(io.BytesIO(f.getvalue()),
                      attachment_filename=image,
-                     mimetype='image/png')
+                     mimetype='image/jpg')
   else:
     abort(404)
 
@@ -121,3 +136,6 @@ def autoren():
     render_template('autoren.html')
   )
 
+@app.route('/robots.txt')
+def robots_txt():
+  return ""

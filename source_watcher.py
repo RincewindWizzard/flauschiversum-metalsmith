@@ -1,4 +1,4 @@
-import os, shutil, tempfile, sys, argparse, threading, logging, multiprocessing, queue, re
+import os, shutil, tempfile, sys, argparse, threading, logging, multiprocessing, queue, re, subprocess
 from multiprocessing import Queue, Process
 import inotify.adapters
 from PIL import Image
@@ -106,7 +106,27 @@ def watch_sources(progress=None, stopped=None):
   stop_event.set()
 
 
-
+error_line = re.compile(r'.*FEHLER.*')
+def check404(*args, **kwargs):
+  """
+  * Recursively requests all resources of the blog and reports everything missing
+  """
+  missing_files = []
+  temp_path = tempfile.mkdtemp()
+  build_path = os.path.join(temp_path, 'build')
+  os.mkdir(build_path)
+  p = subprocess.Popen(
+    ['wget', '-mnH', '-nv', settings.localserver],
+    cwd = build_path,
+    stderr = subprocess.PIPE
+  )
+  stdout, stderr = p.communicate()
+  lines = stderr.decode('utf-8').split('\n')
+  for i, line in enumerate(lines):
+    if error_line.match(line):
+      missing_files.append(lines[max(i - 1, 0)][:-1])
+  p.wait()
+  return missing_files
 
 """
 

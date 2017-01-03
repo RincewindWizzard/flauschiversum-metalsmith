@@ -48,7 +48,7 @@ class Worker(threading.Thread):
   def redo(self):
     """ Tell the Worker to schedule the work for one more time """
     with self._redo_condition:
-      if type(self._redo) == int:
+      if isinstance(self._redo, int):
         self._redo += 1 
       else: 
         self._redo = 1 
@@ -74,6 +74,8 @@ class PublishAssistant(object):
     self.post_image = None
     self.dbreload_intervall = 1 # seconds
     self._last_source_change = 0
+    self.dberrors = []
+    self.missing_files = []
 
     def dbload(*args, **kwargs):
       database.load_posts()
@@ -88,6 +90,9 @@ class PublishAssistant(object):
     self.webserver_process = Process(target = flauschiversum.main)
     logging.debug('start webserver')
     self.webserver_process.start()
+
+    self.check_404_worker = Worker(source_watcher.check404, callback=self.on_resources_missing)
+    self.check_404_worker.start()
 
 
     # create worker for icon loading
@@ -138,6 +143,7 @@ class PublishAssistant(object):
     self.assistant.hide()
     self.database_worker.stop()
     self.source_watcher.stop()
+    self.check_404_worker.stop()
     self.webserver_process.terminate()
 
     Gtk.main_quit()
@@ -146,6 +152,7 @@ class PublishAssistant(object):
     self.database_worker.join()
     self.source_watcher.join()
     self.webserver_process.join()
+    self.check_404_worker.join()
 
   def on_cancel(self, *args):
     self.on_exit()
@@ -185,20 +192,34 @@ class PublishAssistant(object):
     logging.debug('source changed')
     if time.time() - self._last_source_change > self.dbreload_intervall:
       self.reload_build_log()
+      self.check_404_worker.redo()
       self._last_source_change = time.time()
 
   def on_database_read(self, errors):
     logging.debug("Databases reloaded!")
+    self.dberrors = [ (level, msg, post.path) for level, msg, post in errors ]
+    self.update_error_list()
+
+
+  def on_resources_missing(self, missing_files):
+    """
+    * Called whenever check404 worker is done downloading the whole blog.
+    """
+    self.missing_files = [ (logging.ERROR, '404 Not Found', path) for path in missing_files ]
+    self.update_error_list()
+
+  def update_error_list(self):
     error_list = self.builder.get_object("error_list")
     error_list.clear()
 
     contains_serious = False
-    for level, msg, post in errors:
-      if level == logging.ERROR:
-        contains_serious = True
-        error_list.append([self.error_icon, level, msg, post.path])
-      elif level == logging.WARNING:
-        error_list.append([self.warning_icon, level, msg, post.path])
+    icons = {}
+    icons[logging.ERROR] = self.error_icon
+    icons[logging.WARNING] = self.warning_icon
+
+    for level, msg, path in self.missing_files + self.dberrors:
+      contains_serious |= level == logging.ERROR
+      error_list.append([icons[level], level, msg, path])
 
     self.assistant.set_page_complete(
       self.builder.get_object("debug_log_area"),
