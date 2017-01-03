@@ -18,7 +18,7 @@ class Worker(threading.Thread):
   * which tells it to clean up and quit.
   * You can specify how many times the job has to be done.
   """
-  def __init__(self, target=None, progress=None, callback=None, times=0, *args, **kwargs):
+  def __init__(self, target=None, progress=None, callback=None, times=1, *args, **kwargs):
     self._stopped = False
     self._redo = times # how many times should the work be done, or True if forever
     self._redo_condition = threading.Condition()
@@ -26,13 +26,13 @@ class Worker(threading.Thread):
 
     def run(*rargs, **rkwargs):
       while not self._stopped:
-        logging.debug('Worker {} scheduling his job.'.format(threading.current_thread().name))
-        result = target(*rargs, **rkwargs, progress=self.on_progress, stopped=lambda: self._stopped)
-        if callback: GLib.idle_add(callback, result)
         with self._redo_condition:
           self._redo_condition.wait_for(lambda: self._redo > 0 or self._redo == True or self._stopped)
           if type(self._redo) == int and self._redo > 0: 
             self._redo -= 1
+        logging.debug('Worker {} scheduling his job.'.format(threading.current_thread().name))
+        result = target(*rargs, **rkwargs, progress=self.on_progress, stopped=lambda: self._stopped)
+        if callback: GLib.idle_add(callback, result)
       logging.debug('Worker {} stopped.'.format(threading.current_thread().name))
 
     threading.Thread.__init__(self, target = run, *args, **kwargs)
@@ -58,6 +58,53 @@ class Worker(threading.Thread):
     self._redo = True
 
 
+def commit_push(message="Beiträge bearbeitet.", progress=None, stopped=None):
+  """
+  * Executes the following commands:
+  *
+  *   git add src
+  *   git commit -m $message
+  *   git push origin
+  *
+  * and returns all output
+  """
+  p = subprocess.Popen(
+    ['git', 'add', 'src'],
+    stderr = subprocess.PIPE,
+    stdout = subprocess.PIPE
+  )
+  stdout, stderr = p.communicate()
+  p.wait()
+  result  = stderr.decode('utf-8')
+  result += stdout.decode('utf-8')
+
+  if progress: progress(result)
+
+  p = subprocess.Popen(
+    ['git', 'commit', '-m', message],
+    stderr = subprocess.PIPE,
+    stdout = subprocess.PIPE
+  )
+  stdout, stderr = p.communicate()
+  p.wait()
+  result += stderr.decode('utf-8')
+  result += stdout.decode('utf-8')
+
+  if progress: progress(result)
+
+  p = subprocess.Popen(
+    ['git', 'push', 'origin'],
+    stderr = subprocess.PIPE,
+    stdout = subprocess.PIPE
+  )
+  stdout, stderr = p.communicate()
+  p.wait()
+  result += stderr.decode('utf-8')
+  result += stdout.decode('utf-8')
+
+  if progress: progress(result)
+
+  return result
 
 def open_file(path):
   """
@@ -91,9 +138,16 @@ class PublishAssistant(object):
     logging.debug('start webserver')
     self.webserver_process.start()
 
-    self.check_404_worker = Worker(source_watcher.check404, callback=self.on_resources_missing)
+    self.check_404_worker = Worker(source_watcher.check404, callback=self.on_resources_missing, times=0)
     self.check_404_worker.start()
 
+    self.commit_worker = Worker(
+      target = commit_push,
+      progress = self.commit_progress,
+      callback = self.commit_done,
+      times = 0
+    )
+    self.commit_worker.start()
 
     # create worker for icon loading
     def load_icons(*args, **kwargs):
@@ -102,7 +156,7 @@ class PublishAssistant(object):
 
     w = Worker(load_icons)
     w.start()
-    w.stop() # destroy after fisrt use
+    w.stop() # destroy after first use
 
     today = datetime.now()
     date_picker = self.builder.get_object("date_picker")
@@ -144,6 +198,7 @@ class PublishAssistant(object):
     self.database_worker.stop()
     self.source_watcher.stop()
     self.check_404_worker.stop()
+    self.commit_worker.stop()
     self.webserver_process.terminate()
 
     Gtk.main_quit()
@@ -153,6 +208,7 @@ class PublishAssistant(object):
     self.source_watcher.join()
     self.webserver_process.join()
     self.check_404_worker.join()
+    self.commit_worker.join()
 
   def on_cancel(self, *args):
     self.on_exit()
@@ -199,7 +255,7 @@ class PublishAssistant(object):
     logging.debug("Databases reloaded!")
     self.dberrors = [ (level, msg, post.path) for level, msg, post in errors ]
     self.update_error_list()
-
+    self.check_404_worker.redo()
 
   def on_resources_missing(self, missing_files):
     """
@@ -209,6 +265,9 @@ class PublishAssistant(object):
     self.update_error_list()
 
   def update_error_list(self):
+    """
+    * Update the list of errors, which is displayed to the user.
+    """
     error_list = self.builder.get_object("error_list")
     error_list.clear()
 
@@ -223,20 +282,19 @@ class PublishAssistant(object):
 
     self.assistant.set_page_complete(
       self.builder.get_object("debug_log_area"),
-      not contains_serious
+      True#not contains_serious # TODO deactivate
     )
 
   def reload_build_log(self):
     self.database_worker.redo()
 
-  def buildlog(self, level, message, path=None):
-    """
-    * Log an error in the debug log area.
-    * level (string) indicates the severity of the error
-    * path points to the file where the error occured
-    """
-    error_list = self.builder.get_object("error_list")
-    error_list.append([level, message, path])
+  def commit_progress(self, result):
+    commit_buffer = self.builder.get_object("git_result_view").get_buffer()
+    commit_buffer.set_text(result)
+
+  def commit_done(self, result):
+    self.commit_progress(result)
+
 
   def on_error(self, error, msg):
     """
@@ -280,6 +338,42 @@ class PublishAssistant(object):
       self.builder.get_object("image_page"), 
       True
     )
+
+  # --------------------------------------------------------------
+  # page change listeners
+  def on_page_changed(self, assistant, page):
+    if page == self.builder.get_object("intro_page"):
+      self.on_intro_page()
+    elif page == self.builder.get_object("main_page"):
+      self.on_main_page()
+    elif page == self.builder.get_object("description_page"):
+      self.on_description_page()
+    elif page == self.builder.get_object("image_page"):
+      self.on_image_page()
+    elif page == self.builder.get_object("debug_log_area"):
+      self.on_debug_log_area_page()
+    elif page == self.builder.get_object("commit_area"):
+      self.on_commit_area_page()
+
+  def on_intro_page(self):
+    ...
+
+  def on_main_page(self):
+    ...
+
+  def on_description_page(self):
+    ...
+
+  def on_image_page(self):
+    ...
+
+  def on_debug_log_area_page(self):
+    self.check_404_worker.redo()
+
+  def on_commit_area_page(self):
+    self.commit_worker.redo()
+
+  # -------------------------------------------------------------
 
   def check_complete(self, page):
     """ Sets page as complete if entry is filled """

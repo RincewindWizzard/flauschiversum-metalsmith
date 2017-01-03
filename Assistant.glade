@@ -90,6 +90,7 @@
     <signal name="cancel" handler="on_cancel" swapped="no"/>
     <signal name="close" handler="on_exit" swapped="no"/>
     <signal name="delete-event" handler="on_exit" swapped="no"/>
+    <signal name="prepare" handler="on_page_changed" swapped="no"/>
     <child>
       <object class="GtkBox" id="intro_page">
         <property name="visible">True</property>
@@ -586,6 +587,7 @@ Die NAS Server lädt demnächst die aktuelle Version auf flauschiversum.de.</pro
               <object class="GtkTextView" id="git_result_view">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
+                <property name="editable">False</property>
               </object>
             </child>
           </object>
@@ -597,6 +599,7 @@ Die NAS Server lädt demnächst die aktuelle Version auf flauschiversum.de.</pro
         </child>
       </object>
       <packing>
+        <property name="page_type">summary</property>
         <property name="has_padding">False</property>
       </packing>
     </child>
