@@ -30,7 +30,7 @@ Anhand der Ziernähte konnte ich auch abschätzen wo ich die Seiten zusammennäh
 
 Die Außenhülle legte ich erst einmal zur Seite und widmete mich dann dem Innenfutter. Ich hatte noch ein vom Schneiden im Laden halbiertes Katzenbild, dieses möchte ich als kleinen Gag Innen im Futter haben. Also auch hier erst einmal die Stoffe zusmmenführen und das Innenfutter nähen.
 ![Feststecken](DSCF4673.JPG)
-![Festnähen](DSCF4647.JPG)
+![Festnähen](DSCF4674.JPG)
 ![Umgebügelt](DSCF4679.JPG)
 ![Zusammenlegen](DSCF4686.JPG)
 ![Festnähen](DSCF4687.JPG)

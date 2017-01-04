@@ -155,7 +155,7 @@ Und so kam mit jedem mal Auslegen des Rockes immer mehr dazu (manchmal auch Shub
 ![Rock 4](DSCF4292.JPG)
 ![Rock 5](DSCF4294.JPG)
 ![Rock 6](DSCF4298.JPG)
-1[Rock an Puppe](DSCF4299.JPG)
+![Rock an Puppe](DSCF4299.JPG)
 
 Wenn ich aber schon mit verspielten Stoffen hantiere, dann darf es auch so richtig kitschig werden, Blümchen waren ja schon gemacht, dann können auch noch Herzchen dazu.
 ![Herzchen](DSCF4285.JPG)
