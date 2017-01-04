@@ -34,6 +34,7 @@ def postprocess(html):
 @app.route('/wolle/',     defaults={'category': 'wolle', 'page': 0})
 @app.route('/<category>/page/<int:page>/index.html')
 def index(category, page):
+  if page == 0: db.load_posts()
   with dbLock:
     posts = list(reversed(db.posts_by_date(category)))
     page_urls = ['/' + category if category else '/'] + [ 

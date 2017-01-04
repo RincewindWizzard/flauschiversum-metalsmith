@@ -103,7 +103,7 @@ def commit_push(message="Beiträge bearbeitet.", progress=None, stopped=None):
   result += stdout.decode('utf-8')
 
   if progress: progress(result)
-
+  result += '\n\nAlles Fertig!'
   return result
 
 def open_file(path):
@@ -282,7 +282,7 @@ class PublishAssistant(object):
 
     self.assistant.set_page_complete(
       self.builder.get_object("debug_log_area"),
-      True#not contains_serious # TODO deactivate
+      not contains_serious
     )
 
   def reload_build_log(self):

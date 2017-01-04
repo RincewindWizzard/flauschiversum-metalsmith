@@ -44,6 +44,10 @@ class Post(object):
 
     self.reload()
 
+  @property
+  def published(self):
+    return date.today() >= self.date
+
   def tryget(self, doc, key, msg=None):
     """ Try getting a value from a dic and log if error """
     if key in doc.keys():

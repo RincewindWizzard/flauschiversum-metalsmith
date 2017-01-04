@@ -50,27 +50,29 @@
   <main id="index">
     {% include "./lib/pagination.html" %}
     {% for post in posts %}
-      <div class="center">
-        <article>
-          <header>
-            <p class="date"><span class="date">{{ post.datestring }}</span></p>
-            <a href="{{ post.url }}">
-              <h2>{{ post.title }}</h2>
-            </a>
-          </header>
-          <div class="center">
-            {% if  post.thumb %}
-              <a href="{{ post.url }}" class="post-image">
-                <img src="{{ post.thumb }}" class="post-image"/>
+      {% if post.published %} 
+        <div class="center">
+          <article>
+            <header>
+              <p class="date"><span class="date">{{ post.datestring }}</span></p>
+              <a href="{{ post.url }}">
+                <h2>{{ post.title }}</h2>
               </a>
-            {% endif %}
-            <p class="excerpt">
-              {{ post.excerpt }}
-              <a href="{{ post.url }}" class="more">weiterlesen</a>
-            </p>
-          </div>
-        </article>
-      </div>
+            </header>
+            <div class="center">
+              {% if  post.thumb %}
+                <a href="{{ post.url }}" class="post-image">
+                  <img src="{{ post.thumb }}" class="post-image"/>
+                </a>
+              {% endif %}
+              <p class="excerpt">
+                {{ post.excerpt }}
+                <a href="{{ post.url }}" class="more">weiterlesen</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      {% endif %}
     {% endfor %}
     {% include "./lib/pagination.html" %}
   </main>
